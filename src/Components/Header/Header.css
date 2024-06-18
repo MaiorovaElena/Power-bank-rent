@@ -1,2 +1,5 @@
-@import'../../style/template';
-@import'../../style/vars';
+@import '../../style/_template.css';
+
+.header{
+    color: var(--violet-color);
+}
