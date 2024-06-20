@@ -1,14 +1,14 @@
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
-import './App.css'
+import st from './App.module.css'
 
 function App() {
 
   return (
-    <>
+    <div className={st.container}>
       <Header />
       <Footer/>
-    </>
+    </div>
   )
 }
 

@@ -1,7 +1,7 @@
-import './Header.css'
+import st from './Header.module.css'
 
 export default function Header() {
   return (
-    <div className='header'>Header</div>
+    <div className={st.header}>Header</div>
   )
 }

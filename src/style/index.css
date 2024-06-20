@@ -1,0 +1,7 @@
+@import './_template.css';
+
+body{
+    background-color: var(--black-color);
+    padding: 0;
+    margin: 0;
+}

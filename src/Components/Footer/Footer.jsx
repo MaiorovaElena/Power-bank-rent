@@ -1,7 +1,7 @@
-import './Footer.css'
+import st from './Footer.module.css';
 
 export default function Footer() {
   return (
-    <div className='footer'>Footer</div>
+    <div className={st.footer}>Footer</div>
   )
 }
