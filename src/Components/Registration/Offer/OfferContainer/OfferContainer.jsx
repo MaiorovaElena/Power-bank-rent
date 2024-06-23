@@ -1,15 +1,15 @@
 import OfferText from "../OfferText/OfferText";
-import GoogleButton from "../OfferButtons/GoogleButton";
-import AppleButton from "../OfferButtons/AppleButton";
 import QrCode from "../QrCode/QrCore";
 import OfferImage from "../OfferImage/OfferImage";
+import GoogleButton from "../../../Common/Buttons/GoogleButton";
+import AppButton from "../../../Common/Buttons/AppButton";
 
 export default function OfferContainer() {
   return (
     <div>
       <OfferText />
       <GoogleButton />
-      <AppleButton />
+      <AppButton />
       <QrCode />
       <OfferImage />
     </div>
