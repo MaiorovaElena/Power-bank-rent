@@ -1,5 +1,38 @@
 @import '../../style/_template.css';
 
-.header{
-    color: var(--violet-color);
+.header {
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border-radius: 0 0 40px 40px;
+    border-bottom-color: red;
+    border-bottom-width: 5px;
+    /* box-shadow: 0 4px 4px 3px rgba(145, 83, 223, 0.6); */
+    box-shadow: -20px -10px 15px rgba(145, 83, 223, 0.6),
+    10px 10px 15px 10px rgba(145, 83, 223, 0.6);
+    background: #06000d;
+    max-height: 262px;
+    height: 100%;
+}
+
+.blokText {
+    max-width: 40%;
+    width: 100%;
+}
+
+.menuList {
+    /* max-width: 500px;
+    width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.rightBlock {
+    display: flex;
+}
+
+.logoImg {
+    width: 100%;
 }
