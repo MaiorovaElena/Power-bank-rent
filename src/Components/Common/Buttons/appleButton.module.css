@@ -1,0 +1,7 @@
+.button {
+  color: var(--white-color);
+  justify-content: center;
+  font-weight: 100;
+  border: 1px solid var(--violet-color);
+  border-radius: 25px;
+}

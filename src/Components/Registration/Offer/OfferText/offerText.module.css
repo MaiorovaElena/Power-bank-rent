@@ -1,0 +1,6 @@
+.text {
+  color: var(--white-color);
+  font-size: 2em;
+  font-weight: 900;
+  text-align: left;
+}
