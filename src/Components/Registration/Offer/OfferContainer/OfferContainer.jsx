@@ -1,17 +1,20 @@
 import OfferText from "../OfferText/OfferText";
-import QrCode from "../QrCode/QrCore";
-import OfferImage from "../OfferImage/OfferImage";
+import QrCode from "../QrCode/QrCode";
 import GoogleButton from "../../../Common/Buttons/GoogleButton";
 import AppButton from "../../../Common/Buttons/AppButton";
+import styles from "./offerContainer.module.css";
 
 export default function OfferContainer() {
   return (
-    <div>
+    <div className={styles.container}>
       <OfferText />
-      <GoogleButton />
-      <AppButton />
-      <QrCode />
-      <OfferImage />
+      <div className={styles.details}>
+        <div className={styles.buttons}>
+          <GoogleButton />
+          <AppButton />
+        </div>
+        <QrCode />
+      </div>
     </div>
   );
 }
