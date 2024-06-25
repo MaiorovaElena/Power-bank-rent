@@ -1,0 +1,8 @@
+.button {
+  color: var(--violet-color);
+  background-color: var(--black-color);
+  border-radius: 25px;
+  border: none;
+  width: 100px;
+  height: 30px;
+}
