@@ -1,10 +1,37 @@
 import st from './Header.module.css';
 import logo from '../../assets/logo.svg';
-// import { useState } from 'react';
-// import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Header() {
-  // const [classActive, setClassActive] = useState(false)
+  const [classActive, setClassActive] = useState(null);
+  const [classActiveMenu, setClassActiveMenu] = useState(null);
+
+
+  function clickMenuList(event) {
+    event.preventDefault();
+
+    if (classActiveMenu) {
+      classActiveMenu.classList.remove(st.active);
+    }
+    const clickedElement = event.currentTarget;
+    clickedElement.classList.add(st.active);
+    setClassActiveMenu(clickedElement);
+  }
+  function handleItemClick(event) {
+
+    const clickedElement = event.currentTarget;
+
+    // Убираем класс active у предыдущего активного элемента
+    if (classActive) {
+      classActive.classList.remove(st.active);
+    }
+
+    // Добавляем класс active к текущему элементу
+    clickedElement.classList.add(st.active);
+
+    // Обновляем состояние, чтобы хранить текущий активный элемент
+    setClassActive(clickedElement);
+  }
   return (
     <div className={st.header}>
       <div className={st.blokText}>
@@ -14,16 +41,16 @@ export default function Header() {
         <div className={st.textList}>
           <nav className={st.menu}>
             <ul className={st.menuList}>
-              <li className={st.menuLi}><a href="" className={`${st.menuLink} ${st.active}`}>benefits</a></li>
-              <li className={st.menuLi}><a href="" className={st.menuLink}>how to rent</a></li>
-              <li className={st.menuLi}><a href="" className={st.menuLink}>price</a></li>
-              <li className={st.menuLi}><a href="" className={st.menuLink}>faq</a></li>
+              <li className={st.menuLi}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>benefits</a></li>
+              <li className={st.menuLi}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>how to rent</a></li>
+              <li className={st.menuLi}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>price</a></li>
+              <li className={st.menuLi} ><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>faq</a></li>
             </ul>
           </nav>
           <div className={st.language}>
-            <p className={st.languageEn}>EN</p>
+            <p className={`${st.languageEn} ${classActive === 1 ? st.active : ''}`} onClick={handleItemClick}>EN</p>
             <p className={st.slash}>/</p>
-            <p className={`${st.languageSrb} ${st.active}`}>SRB</p>
+            <p className={`${st.languageSrb} ${classActive === 1 ? st.active : ''}`} onClick={handleItemClick}>SRB</p>
           </div>
         </div>
 
