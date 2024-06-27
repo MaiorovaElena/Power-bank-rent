@@ -1,10 +1,11 @@
 import { AppStoreButton } from "react-mobile-app-button";
-import styles from "./appleButton.module.css";
+import styles from "./AppleButton.module.css";
 
 export default function AppButton() {
   const link = "https://apps.apple.com";
   const title = "Download in the";
-  const width = "20em";
+  const theme = "dark";
+  const width = "18em";
   const height = "2em";
 
   return (
@@ -12,6 +13,7 @@ export default function AppButton() {
       <AppStoreButton
         url={link}
         title={title}
+        theme={theme}
         width={width}
         height={height}
         className={styles.button}

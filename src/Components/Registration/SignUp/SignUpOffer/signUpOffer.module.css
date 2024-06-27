@@ -1,10 +1,13 @@
 .container {
+  font-family: var(--font-family);
   background-color: var(--violet-color);
+  text-align: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-radius: 25px;
-  width: 600px;
-  padding: 5px;
-  margin-bottom: 2em;
+  border-radius: 35px;
+  max-width: 500px;
+  padding: 1em;
+  margin-bottom: 3em;
+  margin-top: 3em;
 }

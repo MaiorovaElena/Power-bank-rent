@@ -1,6 +1,8 @@
 .text {
   color: var(--white-color);
+  font-family: var(--font-family);
   font-size: 2em;
   font-weight: 900;
   text-align: left;
+  margin-bottom: 2em;
 }
