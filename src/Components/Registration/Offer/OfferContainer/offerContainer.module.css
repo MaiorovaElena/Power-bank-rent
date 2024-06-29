@@ -1,16 +1,19 @@
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  width: 800px;
+  height: 408px;
+  margin-top: 33px;
 }
 
 .details {
   display: flex;
-  justify-content: space-around;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-right: 70px;
+  margin-bottom: 20px;
 }

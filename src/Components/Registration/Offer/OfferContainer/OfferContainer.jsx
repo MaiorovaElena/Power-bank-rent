@@ -2,7 +2,7 @@ import OfferText from "../OfferText/OfferText";
 import QrCode from "../QrCode/QrCode";
 import GoogleButton from "../../../Common/Buttons/GoogleButton";
 import AppButton from "../../../Common/Buttons/AppButton";
-import styles from "./offerContainer.module.css";
+import styles from "./OfferContainer.module.css";
 
 export default function OfferContainer() {
   return (

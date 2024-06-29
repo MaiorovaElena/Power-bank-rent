@@ -5,7 +5,7 @@ export default function GoogleButton() {
   const link = "https://play.google.com/store/apps";
   const title = "Download in the";
   const theme = "dark";
-  const width = "18em";
+  const width = "20em";
   const height = "2em";
 
   return (
