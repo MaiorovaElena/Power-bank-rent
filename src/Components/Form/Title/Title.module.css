@@ -1,0 +1,15 @@
+.container {
+  background-color: var(--violet-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  height: 100px;
+  width: 380px;
+}
+
+.title {
+  color: var(--black-color);
+  font-size: 48px;
+  font-weight: 600;
+}
