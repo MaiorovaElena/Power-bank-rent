@@ -26,7 +26,6 @@
 }
 
 .step {
-  outline: 2px solid yellow;
   display: flex;
 
   @media screen and (max-width: 950px) {
