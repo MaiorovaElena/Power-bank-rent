@@ -1,5 +1,9 @@
-import styles from "./signUpButton.module.css";
+import styles from "./SignUpButton.module.css";
 
-export default function SignUpButton() {
-  return <button className={styles.button}>Sign Up</button>;
+export default function SignUpButton({ onClick }) {
+  return (
+    <button className={styles.button} onClick={onClick}>
+      Sign Up
+    </button>
+  );
 }

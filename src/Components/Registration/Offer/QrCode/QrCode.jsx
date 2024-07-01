@@ -1,4 +1,4 @@
-import styles from "./qrCode.module.css";
+import styles from "./QrCode.module.css";
 import image from "../../../../assets/QR.png";
 
 export default function QrCode() {

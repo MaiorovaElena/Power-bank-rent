@@ -1,7 +1,7 @@
 import OfferContainer from "../Offer/OfferContainer/OfferContainer";
 import OfferImage from "../Offer/OfferImage/OfferImage";
 import SignUpOffer from "../SignUp/SignUpOffer/SignUpOffer";
-import styles from "./registrationSection.module.css";
+import styles from "./RegistrationSection.module.css";
 
 export default function RegistrationSection() {
   return (
