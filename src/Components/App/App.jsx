@@ -1,6 +1,7 @@
 import Benefits from "../Benefits/Benefits/Benefts";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import HowToRent from "../HowToRent/HowToRent";
 import RegistrationSection from "../Registration/RegistrationSection/RegistrationSection";
 import st from "./App.module.css";
 
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <RegistrationSection />
       <Benefits />
+      {/* <HowToRent /> */}
       <Footer />
     </div>
   );
