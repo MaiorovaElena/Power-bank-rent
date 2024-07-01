@@ -1,4 +1,3 @@
-import React from "react";
 import st from "./HowToRent.module.css";
 import search from "../../assets/search.svg";
 import qrIcon from "../../assets/qrIcon.svg";
