@@ -2,6 +2,7 @@ import st from './Header.module.css';
 import logo from '../../assets/logo.svg';
 import { useState } from 'react';
 import btnOpen from "../../assets/header/open-menu.svg";
+import BurgerMenu from './BurgerMenu/BurgerMenu';
 
 export default function Header() {
   const [classActive, setClassActive] = useState(null);
@@ -69,7 +70,7 @@ export default function Header() {
           <a href="#" className={st.logoLink}><img src={logo} className={st.logoImg} /></a>
         </div>
 
-        <div className={st.mobileMenu}></div>
+        <BurgerMenu/>
       </div>
     </div>
   )
