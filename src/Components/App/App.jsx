@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Benefits from "../Benefits/Benefits/Benefts";
 import DeviceRent from "../DeviceRent/DeviceRent";
 import Footer from "../Footer/Footer";
@@ -7,13 +8,28 @@ import RegistrationSection from "../Registration/RegistrationSection/Registratio
 import st from "./App.module.css";
 
 function App() {
+  const homeRef = useRef(null);
+  const myRef = useRef(null);
+  const myRefTwo = useRef(null);
+
+  const scrollToRef = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+
+  const homeScroll = () => scrollToRef(homeRef);
+  const exeScroll = () => scrollToRef(myRef);
+
+  const scrollToBlock = () => scrollToRef(myRefTwo);
+
+
   return (
     <div className={st.container}>
-      <Header />
-      <RegistrationSection />
-      <Benefits />
+      <Header scrollToBlock={scrollToBlock} exeScroll={exeScroll} homeScroll={homeScroll}/>
+      <RegistrationSection homeRef={homeRef}/>
+      <Benefits myRef={myRef}/>
       <DeviceRent />
-      <HowToRent />
+      <HowToRent myRefTwo={myRefTwo}/>
       <Footer />
     </div>
   );

@@ -118,6 +118,7 @@
 .btnOpen{
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .languageBlock{

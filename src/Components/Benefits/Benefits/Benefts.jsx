@@ -4,9 +4,9 @@ import IconMap from "../../../assets/IconMap.png";
 import IconMoney from "../../../assets/IconMoney.png";
 import IconPhone from "../../../assets/IconPhone.png";
 
-export default function Benefits() {
+export default function Benefits({myRef}) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={myRef}>
       <div className={styles.benefits}>
         <div className={styles.list}>
           <img className={styles.image} src={IconMap} alt="Map" />

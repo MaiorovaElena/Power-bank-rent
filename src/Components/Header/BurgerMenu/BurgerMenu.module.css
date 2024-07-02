@@ -1,1 +1,74 @@
 @import '../../../style/_template.css';
+
+
+.burgerMenu{
+    display: none;
+}
+
+
+.menuLink {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 599px) {
+
+    .burgerMenu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: aliceblue;
+        /* width: 100px; */
+        /* width: 70%; */
+        width: 0;
+        height: 50svh;
+        margin-left: auto;
+        border-top-right-radius: 36px;
+        border-bottom-right-radius: 36px;
+        /* border: 2px solid red; */
+        /* border-bottom: 5px solid red;
+        border-right: 5px solid red; */
+        top: 0;
+        left: 0;
+        /* transition: transform 0.3s linear; */
+
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .openMenu {
+        /* transform: translateX(5%); */
+        width: 70%;
+        border-bottom: 5px solid red;
+        border-right: 5px solid red;
+    }
+
+    .x {
+        /* position: absolute; */
+        color: black;
+        margin-left: 60%;
+        display: block;
+        transition: 0.3s
+    }
+
+    .xBtn {
+        display: block;
+        transition: 0.3s;
+
+    }
+
+    .menu {
+        /* display: flex; */
+        height: 50%;
+    }
+
+    .menuList {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        text-transform: uppercase;
+    }
+}
