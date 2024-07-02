@@ -19,7 +19,6 @@ function App() {
 
   const homeScroll = () => scrollToRef(homeRef);
   const exeScroll = () => scrollToRef(myRef);
-
   const scrollToBlock = () => scrollToRef(myRefTwo);
 
 

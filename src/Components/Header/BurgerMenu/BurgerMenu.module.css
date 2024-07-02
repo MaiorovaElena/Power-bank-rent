@@ -55,6 +55,8 @@
     .xBtn {
         display: block;
         transition: 0.3s;
+        background-color: transparent;
+        border: none;
 
     }
 
@@ -69,6 +71,12 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        text-transform: uppercase;
+    }
+
+    .menuLink{
+        background-color: transparent;
+        border: none;
         text-transform: uppercase;
     }
 }

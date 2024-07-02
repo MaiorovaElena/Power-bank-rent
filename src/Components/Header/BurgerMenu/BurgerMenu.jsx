@@ -8,10 +8,10 @@ export default function BurgerMenu({setOpenMobileMenu, openMobileMenu, closeMenu
         </div>
         <nav className={st.menu}>
               <ul className={st.menuList}>
-                <li className={st.menuLi}><a href="" className={st.menuLink} >benefits</a></li>
-                <li className={st.menuLi} onClick={scrollToBlock}><a href="" className={st.menuLink}>how to rent</a></li>
-                <li className={st.menuLi}><a href="" className={st.menuLink} >price</a></li>
-                <li className={st.menuLi} ><a href="" className={st.menuLink} >faq</a></li>
+                <li className={st.menuLi}><button className={st.menuLink} >benefits</button></li>
+                <li className={st.menuLi} onClick={scrollToBlock}><button className={st.menuLink}>how to rent</button></li>
+                <li className={st.menuLi}><button className={st.menuLink} >price</button></li>
+                <li className={st.menuLi} ><button className={st.menuLink} >faq</button></li>
               </ul>
         </nav>
     </div>

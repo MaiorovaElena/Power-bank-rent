@@ -57,7 +57,7 @@ export default function Header({scrollToBlock, exeScroll, homeScroll}) {
       <div className={st.container}>
         <div className={st.blokText}>
           <div className={st.title}>
-            <h1 className={st.titleText}><a href="" className={st.menuLink}>Meteor</a></h1>
+            <h1 className={st.titleText}>Meteor</h1>
           </div>
           <div className={st.mobileText}>
             <p className={st.textPowerBank}>Rent a <span className={st.span}>power bank</span> for the price of a cup of coffee.</p>
