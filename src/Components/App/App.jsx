@@ -1,3 +1,5 @@
+import Benefits from "../Benefits/Benefits/Benefts";
+import DeviceRent from "../DeviceRent/DeviceRent";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import RegistrationSection from "../Registration/RegistrationSection/RegistrationSection";
@@ -8,6 +10,8 @@ function App() {
     <div className={st.container}>
       <Header />
       <RegistrationSection />
+      <Benefits />
+      <DeviceRent/>
       <Footer />
     </div>
   );

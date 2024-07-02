@@ -1,10 +1,26 @@
 .container {
+  font-family: var(--font-family);
   background-color: var(--violet-color);
+  text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  border-radius: 25px;
-  width: 600px;
-  padding: 5px;
-  margin-bottom: 2em;
+  border-radius: 40px;
+  width: 860px;
+  height: 132px;
+  padding-left: 30px;
+  margin-bottom: 35px;
+  margin-top: 315px;
+}
+
+.offer {
+  font-size: 24px;
+  padding: 70px;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
