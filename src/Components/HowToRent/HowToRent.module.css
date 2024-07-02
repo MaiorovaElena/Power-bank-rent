@@ -3,6 +3,7 @@
   color: var(--white-color);
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .title {

@@ -1,4 +1,5 @@
 import Benefits from "../Benefits/Benefits/Benefts";
+import DeviceRent from "../DeviceRent/DeviceRent";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import HowToRent from "../HowToRent/HowToRent";
@@ -11,7 +12,8 @@ function App() {
       <Header />
       <RegistrationSection />
       <Benefits />
-      {/* <HowToRent /> */}
+      <DeviceRent />
+      <HowToRent />
       <Footer />
     </div>
   );
