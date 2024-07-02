@@ -2,6 +2,7 @@ import Benefits from "../Benefits/Benefits/Benefts";
 import DeviceRent from "../DeviceRent/DeviceRent";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import HowToRent from "../HowToRent/HowToRent";
 import RegistrationSection from "../Registration/RegistrationSection/RegistrationSection";
 import st from "./App.module.css";
 
@@ -11,7 +12,8 @@ function App() {
       <Header />
       <RegistrationSection />
       <Benefits />
-      <DeviceRent/>
+      <DeviceRent />
+      <HowToRent />
       <Footer />
     </div>
   );

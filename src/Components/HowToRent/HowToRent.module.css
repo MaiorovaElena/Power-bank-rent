@@ -1,0 +1,224 @@
+.howToRent {
+  font-family: var(--font-family);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  font-weight: 800;
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-top: clamp(30px, 5vw, 60px);
+  margin-bottom: clamp(25px, 5vw, 61px);
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  margin: 0 120px;
+  
+  @media screen and (max-width: 950px) {
+    margin: 20px; 
+}
+}
+
+.step {
+  display: flex;
+
+  @media screen and (max-width: 950px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; 
+  }
+}
+
+.step:nth-child(even) {
+  justify-content: flex-end;
+
+    @media screen and (max-width: 950px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+.number {
+  background-color: var(--violet-color);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 91px 15px 91px 0;
+  font-weight: 600;
+  font-size: clamp(24px, 3vw, 36px);
+  color: var(--black-color);
+  flex: 0 0 80px;
+
+  @media screen and (max-width: 950px) {
+    margin: 0 0 15px 0;
+    width: 45px;
+    height: 45px;
+    flex: 0 0 45px;
+}
+}
+
+.step:nth-child(even) .number {
+  margin: 91px 0;
+
+  @media screen and (max-width: 950px) {
+    margin: 0 0 15px 0;
+}
+}
+
+.gradient_container {
+  padding: 61px 0 61px 45px;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  display: flex;
+
+  @media screen and (max-width: 950px) {
+    padding: 0;
+    margin-bottom: 30px;
+    flex-grow: 0;
+}
+}
+
+.gradient_container::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 1px;
+  right: 0;
+  bottom: 0;
+  background: url('../../assets/gradient.png') no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  max-width: 879px;
+  max-height: 252px;
+}
+
+@media screen and (max-width: 950px) {
+  .gradient_container::before {
+    display: none;
+  }
+}
+
+.step:nth-child(even) .gradient_container {
+  justify-content: flex-end;
+}
+
+.step:nth-child(even) .gradient_container::before {
+  left: 200px;
+  width: 100%;
+}
+
+.border {
+  border: 3px solid var(--violet-color);
+  border-radius: 20px;
+  background-color: var(--black-color);
+  display: flex;
+  align-items: center;
+  max-width: 655px;
+  width: 100%;
+  max-height: 135px;
+
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: clamp(310px, 3vw, 400px);
+  }
+}
+
+.step:nth-child(even) .border {
+  margin-right: 63px;
+
+  @media screen and (max-width: 950px) {
+    flex-direction: column-reverse;
+    margin-right: 0;
+  }
+}
+
+.description {
+  padding: 30px 0 30px 60px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  flex-grow: 1;
+}
+
+.step:nth-child(even) .description {
+  text-align: end;
+}
+
+.step:nth-child(2) .description {
+  padding: 0 85px 0 0;
+}
+
+.step:nth-child(3) .description {
+  padding: 0 140px 0 60px;
+}
+
+.step:nth-child(4) .description {
+  padding: 0 55px 0 0;
+}
+
+@media screen and (max-width: 1032px) {
+.description {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .description {
+  padding: 0 30px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: clamp(20px, 3vw, 30px);
+}
+
+.step:nth-child(2) .description {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.step:nth-child(3) .description {
+  padding: 0 30px;
+}
+
+.step:nth-child(4) .description {
+  text-align: center;
+  padding: 0 30px;
+}
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  padding: 0 66px 0 0;
+  flex-shrink: 0;
+}
+
+.step:nth-child(even) .image {
+  padding-left: 84px;
+}
+
+@media screen and (max-width: 950px) {
+  .image {
+  width: clamp(45px, 8vw, 60px);
+  height: clamp(45px, 8vw, 60px);
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.step:nth-child(even) .image {
+  padding-left: 0;
+}
+}
