@@ -21,6 +21,7 @@ export default function SignUpOffer() {
     <div className={styles.container}>
       <SignUpButton onClick={openModal} />
       <Modal
+        style={{ overlay: { zIndex: 100 } }}
         className={styles.modal}
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
