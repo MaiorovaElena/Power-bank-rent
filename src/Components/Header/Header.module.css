@@ -86,11 +86,10 @@
 .language {
     display: flex;
     cursor: pointer;
-    font-family: var(--font-family);
+    /* font-family: var(--font-family);
     font-weight: 500;
-    /* font-size: 24px; */
     font-size: clamp(16px, 2vw, 24px);
-    line-height: 87%;
+    line-height: 87%; */
     /* padding: 4px 0 4px 0; */
 }
 
@@ -123,6 +122,21 @@
 
 .languageBlock{
     display: flex;
+}
+
+.langBtn {
+    background-color: transparent;
+    border: none;
+    color: var(--white-color);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: clamp(16px, 2vw, 24px);
+    line-height: 87%;
+}
+
+.slash {
+    font-size: clamp(16px, 2vw, 24px);
+    font-weight: bold;
 }
 
 /* @media screen and (max-width: 1440px) {

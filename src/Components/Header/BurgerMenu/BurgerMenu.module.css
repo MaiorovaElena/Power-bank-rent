@@ -1,7 +1,7 @@
 @import '../../../style/_template.css';
 
 
-.burgerMenu{
+.burgerMenu {
     display: none;
 }
 
@@ -22,15 +22,17 @@
         /* width: 100px; */
         /* width: 70%; */
         width: 0;
-        height: 50svh;
+        height: 40svh;
         margin-left: auto;
-        border-top-right-radius: 36px;
+        /* border-top-right-radius: 36px; */
         border-bottom-right-radius: 36px;
+        border-bottom-left-radius: 36px;
         /* border: 2px solid red; */
         /* border-bottom: 5px solid red;
         border-right: 5px solid red; */
         top: 0;
         left: 0;
+        background-color: var(--black-color);
         /* transition: transform 0.3s linear; */
 
         overflow-x: hidden;
@@ -39,17 +41,22 @@
 
     .openMenu {
         /* transform: translateX(5%); */
-        width: 70%;
-        border-bottom: 5px solid red;
-        border-right: 5px solid red;
+        width: 100%;
+        border-bottom: 5px solid var(--violet-color);
+        border-right: 5px solid var(--violet-color);
     }
 
     .x {
         /* position: absolute; */
         color: black;
-        margin-left: 60%;
+        margin-left: 70%;
         display: block;
-        transition: 0.3s
+        transition: 0.3s;
+        height: 5%;
+    }
+
+    .btnClose {
+        width: 60%;
     }
 
     .xBtn {
@@ -70,13 +77,28 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         height: 100%;
         text-transform: uppercase;
     }
 
-    .menuLink{
+    .menuLink {
         background-color: transparent;
         border: none;
         text-transform: uppercase;
+        color: var(--white-color);
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .titleMobile {
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 24px;
+        cursor: pointer;
+        /* padding:  2% 0  2% 0; */
     }
 }

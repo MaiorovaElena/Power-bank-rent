@@ -1,10 +1,14 @@
 import st from './BurgerMenu.module.css';
+import close from '../../../assets/header/close.png'
 
 export default function BurgerMenu({setOpenMobileMenu, openMobileMenu, closeMenu, scrollToBlock}) {
   return (
     <div className={`${st.burgerMenu} ${openMobileMenu === true ? st.openMenu :''}`}>
         <div className={st.x}>
-            <button className={st.xBtn} onClick={closeMenu}>X</button>
+            <button className={st.xBtn} onClick={closeMenu}><img src={close} className={st.btnClose} alt="close" /></button>
+        </div>
+        <div>
+          <h2 className={st.titleMobile}>meteor</h2>
         </div>
         <nav className={st.menu}>
               <ul className={st.menuList}>

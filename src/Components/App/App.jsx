@@ -6,8 +6,15 @@ import Header from "../Header/Header";
 import HowToRent from "../HowToRent/HowToRent";
 import RegistrationSection from "../Registration/RegistrationSection/RegistrationSection";
 import st from "./App.module.css";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  }
+
   const homeRef = useRef(null);
   const myRef = useRef(null);
   const myRefTwo = useRef(null);
@@ -24,11 +31,17 @@ function App() {
 
   return (
     <div className={st.container}>
-      <Header scrollToBlock={scrollToBlock} exeScroll={exeScroll} homeScroll={homeScroll}/>
+      <Header
+        scrollToBlock={scrollToBlock}
+        exeScroll={exeScroll}
+        homeScroll={homeScroll}
+        changeLanguage={changeLanguage}
+        t={t}
+        />
       <RegistrationSection homeRef={homeRef}/>
       <Benefits myRef={myRef}/>
       <DeviceRent />
-      <HowToRent myRefTwo={myRefTwo}/>
+      <HowToRent myRefTwo={myRefTwo} />
       <Footer />
     </div>
   );

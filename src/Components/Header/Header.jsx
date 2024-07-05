@@ -4,7 +4,7 @@ import { useState } from 'react';
 import btnOpen from "../../assets/header/open-menu.svg";
 import BurgerMenu from './BurgerMenu/BurgerMenu';
 
-export default function Header({scrollToBlock, exeScroll, homeScroll}) {
+export default function Header({scrollToBlock, exeScroll, homeScroll, changeLanguage, t}) {
   const [classActive, setClassActive] = useState(null);
   const [classActiveMenu, setClassActiveMenu] = useState(null);
 
@@ -51,6 +51,15 @@ export default function Header({scrollToBlock, exeScroll, homeScroll}) {
     setClassActive(clickedElement);
   }
 
+  // function langEn() {
+  //   handleItemClick(event);
+  // }
+
+  const langEn = (language) => {
+    changeLanguage(language);
+    handleItemClick;
+  }
+
 
   return (
     <div className={st.header}>
@@ -76,9 +85,14 @@ export default function Header({scrollToBlock, exeScroll, homeScroll}) {
                 <button className={st.btnOpen} onClick={openMenu}><img className={st.imgOpen} src={btnOpen} alt="image open" /></button>
               </div>
               <div className={st.languageBlock}>
+                <button className={st.langBtn} onClick={()=> changeLanguage("en")}>
                 <p className={`${st.languageEn} ${classActive === 1 ? st.active : ''}`} onClick={handleItemClick}>EN</p>
+                </button>
+                
                 <p className={st.slash}>/</p>
+                <button className={st.langBtn} onClick={() => changeLanguage("srb")}>
                 <p className={`${st.languageSrb} ${classActive === 1 ? st.active : ''}`} onClick={handleItemClick}>SRB</p>
+                </button>
               </div>
             </div>
           </div>
