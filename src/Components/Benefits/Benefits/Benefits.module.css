@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 919px;
+  padding-right: 58px;
 }
 
 .list {
