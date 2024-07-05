@@ -16,6 +16,8 @@ function App() {
     i18n.changeLanguage(language);
   }
 
+  
+
   const homeRef = useRef(null);
   const myRef = useRef(null);
   const myRefTwo = useRef(null);
@@ -39,7 +41,7 @@ function App() {
         changeLanguage={changeLanguage}
         t={t}
         />
-      <RegistrationSection homeRef={homeRef}/>
+      <RegistrationSection homeRef={homeRef} t={t} i18n={i18n}/>
       <Benefits myRef={myRef}/>
       <DeviceRent />
       <HowToRent myRefTwo={myRefTwo} />

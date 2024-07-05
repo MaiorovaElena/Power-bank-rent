@@ -7,8 +7,8 @@ export default function BurgerMenu({setOpenMobileMenu, openMobileMenu, closeMenu
         <div className={st.x}>
             <button className={st.xBtn} onClick={closeMenu}><img src={close} className={st.btnClose} alt="close" /></button>
         </div>
-        <div>
-          <h2 className={st.titleMobile}>meteor</h2>
+        <div className={st.titleMobile}>
+          <h2 className={st.titleMobileText}>meteor</h2>
         </div>
         <nav className={st.menu}>
               <ul className={st.menuList}>

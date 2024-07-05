@@ -2,5 +2,7 @@
     "benefits" : "benefits",
     "howToRent" : "how to rent",
     "price" : "price",
-    "faq" : "faq"
+    "faq" : "faq",
+    "discount":"25% discount on the first charge for",
+    "registering":"registering on the site"
 }

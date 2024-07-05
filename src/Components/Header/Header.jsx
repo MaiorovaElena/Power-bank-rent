@@ -51,21 +51,14 @@ export default function Header({scrollToBlock, exeScroll, homeScroll, changeLang
     setClassActive(clickedElement);
   }
 
-  // function langEn() {
-  //   handleItemClick(event);
-  // }
 
-  const langEn = (language) => {
-    changeLanguage(language);
-    handleItemClick;
-  }
 
 
   return (
     <div className={st.header}>
       <div className={st.container}>
         <div className={st.blokText}>
-          <div className={st.title}>
+          <div className={st.title} onClick={homeScroll}>
             <h1 className={st.titleText}>Meteor</h1>
           </div>
           <div className={st.mobileText}>
@@ -74,9 +67,9 @@ export default function Header({scrollToBlock, exeScroll, homeScroll, changeLang
           <div className={st.textList}>
             <nav className={st.menu}>
               <ul className={st.menuList}>
-                <li className={st.menuLi} onClick={exeScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>benefits</a></li>
-                <li className={st.menuLi} onClick={scrollToBlock}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>how to rent</a></li>
-                <li className={st.menuLi}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>price</a></li>
+                <li className={st.menuLi} onClick={exeScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("benefits")}</a></li>
+                <li className={st.menuLi} onClick={scrollToBlock}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("howToRent")}</a></li>
+                <li className={st.menuLi}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("price")}</a></li>
                 <li className={st.menuLi} ><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>faq</a></li>
               </ul>
             </nav>
@@ -98,7 +91,7 @@ export default function Header({scrollToBlock, exeScroll, homeScroll, changeLang
           </div>
 
         </div>
-        <div className={st.logo} onClick={homeScroll}>
+        <div className={st.logo} >
           <img src={logo} className={st.logoImg} />
         </div>
 

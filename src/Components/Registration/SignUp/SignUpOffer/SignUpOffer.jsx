@@ -4,7 +4,7 @@ import { useState } from "react";
 import Modal from "react-modal";
 import FormContainer from "../../../Form/FormContainer/FormContainer";
 
-export default function SignUpOffer() {
+export default function SignUpOffer({t, i18n}) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -30,8 +30,8 @@ export default function SignUpOffer() {
       </Modal>
       <div className={styles.offer}>
         <p>
-          25% discount on the first charge for <br />
-          registering on the site
+          {i18n.t("discount")} <br />
+          {i18n.t("registering")}
         </p>
       </div>
     </div>
