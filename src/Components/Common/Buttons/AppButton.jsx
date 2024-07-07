@@ -5,7 +5,7 @@ export default function AppButton() {
   const link = "https://apps.apple.com";
   const title = "Download in the";
   const theme = "dark";
-  const width = "20em";
+  const width = "26vw";
   const height = "2em";
 
   return (

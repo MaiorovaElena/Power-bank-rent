@@ -29,10 +29,7 @@ export default function SignUpOffer() {
         {modalContent}
       </Modal>
       <div className={styles.offer}>
-        <p>
-          25% discount on the first charge for <br />
-          registering on the site
-        </p>
+        <p>25% discount on the first charge for registering on the site</p>
       </div>
     </div>
   );
