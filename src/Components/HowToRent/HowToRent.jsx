@@ -4,9 +4,9 @@ import qrIcon from "../../assets/qrIcon.svg";
 import battery from "../../assets/battery.svg";
 import returnIcon from "../../assets/returnIcon.svg";
 
-const HowToRent = ({myRefTwo}) => {
+const HowToRent = ({howToRentRef}) => {
   return (
-    <section className={st.howToRent} ref={myRefTwo}>
+    <section className={st.howToRent} ref={howToRentRef}>
       <h3 className={st.title}>How to Rent</h3>
       <div className={st.steps}>
         <div className={st.step}>

@@ -16,11 +16,11 @@ function App() {
     i18n.changeLanguage(language);
   }
 
-  
 
   const homeRef = useRef(null);
-  const myRef = useRef(null);
-  const myRefTwo = useRef(null);
+  const benefitsRef = useRef(null);
+  const howToRentRef = useRef(null);
+  const pricesRef = useRef(null);
 
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -28,23 +28,26 @@ function App() {
 
 
   const homeScroll = () => scrollToRef(homeRef);
-  const exeScroll = () => scrollToRef(myRef);
-  const scrollToBlock = () => scrollToRef(myRefTwo);
+  const benefitsScroll = () => scrollToRef(benefitsRef);
+  const howToRentScroll = () => scrollToRef(howToRentRef);
+  const pricesScroll = () => scrollToRef(pricesRef);
 
 
   return (
     <div className={st.container}>
       <Header
-        scrollToBlock={scrollToBlock}
-        exeScroll={exeScroll}
+        howToRentScroll={howToRentScroll}
+        benefitsScroll={benefitsScroll}
         homeScroll={homeScroll}
+        pricesScroll={pricesScroll}
         changeLanguage={changeLanguage}
         t={t}
         />
       <RegistrationSection homeRef={homeRef} t={t} i18n={i18n}/>
-      <Benefits myRef={myRef}/>
+      <Benefits benefitsRef={benefitsRef}/>
       <DeviceRent />
-      <HowToRent myRefTwo={myRefTwo} />
+      <HowToRent howToRentRef={howToRentRef} />
+      <Prices pricesRef={pricesRef}/>
       <Footer />
     </div>
   );

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import btnOpen from "../../assets/header/open-menu.svg";
 import BurgerMenu from './BurgerMenu/BurgerMenu';
 
-export default function Header({scrollToBlock, exeScroll, homeScroll, changeLanguage, t}) {
+export default function Header({howToRentScroll, benefitsScroll, homeScroll, pricesScroll, changeLanguage, t}) {
   const [classActive, setClassActive] = useState(null);
   const [classActiveMenu, setClassActiveMenu] = useState(null);
 
@@ -67,9 +67,9 @@ export default function Header({scrollToBlock, exeScroll, homeScroll, changeLang
           <div className={st.textList}>
             <nav className={st.menu}>
               <ul className={st.menuList}>
-                <li className={st.menuLi} onClick={exeScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("benefits")}</a></li>
-                <li className={st.menuLi} onClick={scrollToBlock}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("howToRent")}</a></li>
-                <li className={st.menuLi}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("price")}</a></li>
+                <li className={st.menuLi} onClick={benefitsScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("benefits")}</a></li>
+                <li className={st.menuLi} onClick={howToRentScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("howToRent")}</a></li>
+                <li className={st.menuLi} onClick={pricesScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("price")}</a></li>
                 <li className={st.menuLi} ><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>faq</a></li>
               </ul>
             </nav>
@@ -81,7 +81,6 @@ export default function Header({scrollToBlock, exeScroll, homeScroll, changeLang
                 <button className={st.langBtn} onClick={()=> changeLanguage("en")}>
                 <p className={`${st.languageEn} ${classActive === 1 ? st.active : ''}`} onClick={handleItemClick}>EN</p>
                 </button>
-                
                 <p className={st.slash}>/</p>
                 <button className={st.langBtn} onClick={() => changeLanguage("srb")}>
                 <p className={`${st.languageSrb} ${classActive === 1 ? st.active : ''}`} onClick={handleItemClick}>SRB</p>
@@ -95,7 +94,14 @@ export default function Header({scrollToBlock, exeScroll, homeScroll, changeLang
           <img src={logo} className={st.logoImg} />
         </div>
 
-        <BurgerMenu setOpenMobileMenu={setOpenMobileMenu} openMobileMenu={openMobileMenu} closeMenu={closeMenu} scrollToBlock={scrollToBlock}/>
+        <BurgerMenu
+            openMobileMenu={openMobileMenu}
+            closeMenu={closeMenu}
+            howToRentScroll={howToRentScroll}
+            benefitsScroll={benefitsScroll}
+            homeScroll={homeScroll}
+            pricesScroll={pricesScroll}
+        />
       </div>
     </div>
   )
