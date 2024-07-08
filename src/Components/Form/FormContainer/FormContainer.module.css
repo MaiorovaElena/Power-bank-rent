@@ -8,12 +8,26 @@
   align-items: center;
   border: 2px solid var(--violet-color);
   border-radius: 20px;
-  height: 755px;
-  width: 960px;
+  height: clamp(450px, 55vw, 755px);
+  width: clamp(300px, 70vw, 960px);
 }
 
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 1160px) {
+  .container {
+    height: 70%;
+    width: 78vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    width: 80vw;
+    height: 110vw;
+  }
 }

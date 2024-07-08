@@ -1,13 +1,13 @@
 .input {
   color: var(--white-color);
-  font-size: 32px;
+  font-size: clamp(23px, 2vw, 32px);
   font-weight: 500;
   background-color: var(--black-color);
   box-sizing: border-box;
-  border: 3px solid var(--violet-color);
+  border: 2px solid var(--violet-color);
   border-radius: 20px;
-  height: 80px;
-  width: 820px;
+  height: clamp(50px, 12vw, 75px);
+  width: clamp(200px, 60vw, 820px);
   padding-left: 25px;
   margin-bottom: 18px;
 }
@@ -17,18 +17,22 @@
 }
 
 ::placeholder {
-  font-size: 24px;
+  font-size: clamp(20px, 2vw, 24px);
   font-weight: 200;
   color: var(--white-color);
 }
 
 .checkboxContainer {
   color: var(--white-color);
-  font-size: 24px;
+  font-size: clamp(18px, 2vw, 24px);
   font-weight: 200;
   user-select: none;
   margin: 30px;
-  width: 820px;
+  width: clamp(290px, 58vw, 820px);
+}
+
+.checkbox {
+  margin-right: 7px;
 }
 
 input[type="checkbox"] + label {
@@ -70,4 +74,33 @@ input[type="checkbox"] + label {
 
 .span {
   color: var(--violet-color);
+}
+
+@media screen and (max-width: 990px) {
+  .input {
+    width: 65vw;
+    height: 8vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .input {
+    width: 65vw;
+    height: 9vw;
+    font-size: 15px;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+
+  .checkboxContainer {
+    text-align: center;
+    width: 70vw;
+    margin-top: 0px;
+  }
+
+  .terms {
+    font-size: 12px;
+  }
 }

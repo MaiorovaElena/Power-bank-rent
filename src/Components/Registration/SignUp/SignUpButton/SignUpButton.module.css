@@ -1,12 +1,26 @@
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   color: var(--violet-color);
   font-family: var(--font-family);
-  font-size: 32px;
+  font-size: clamp(20px, 3vw, 32px);
   font-weight: 600;
   background-color: var(--black-color);
   border-radius: 40px;
   border: none;
-  width: 260px;
-  height: 72px;
+  margin-left: clamp(15px, 1vw, 45px);
+  padding-left: clamp(5px, 1vw, 40px);
+  padding-right: clamp(5px, 1vw, 40px);
+  width: clamp(136px, 75vw, 260px);
+  height: clamp(50px, 10vw, 72px);
+}
+
+@media screen and (max-width: 599px) {
+  .button {
+    border-radius: 25px;
+    min-width: 135px;
+    padding: 15px;
+  }
 }
