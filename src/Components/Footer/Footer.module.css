@@ -1,78 +1,185 @@
 .footer {
-    border: 3px solid var(--violet-color);
-    border-radius: 20px;
-    font-family: var(--font-family);
-    color: var(--white-color);
-    display: flex;
-    align-items: flex-start;
-    max-width: 1400px;
-    width: 100%;
-    margin-top: 20px;
-    padding: 50px 0 65px 0;
-  }
-  
+  box-sizing: border-box;
+  border: 3px solid var(--violet-color);
+  border-radius: 20px;
+  font-family: var(--font-family);
+  color: var(--white-color);
+  display: flex;
+  align-items: flex-start;
+  max-width: 1400px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 50px 0 65px 0;
+}
+
 .wrapper {
-    outline: 3px solid wheat;
-    margin-left: 80px;
-    margin-right: 170px;
+  margin: 0 170px 0 80px;
 }
 
 .title {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.nav {
-    outline: 3px solid wheat;
-    display: flex;
-    flex-direction: column;
-    gap: 38px;
-    font-weight: 400;
-    font-size: 24px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 60px;
-    margin-right: 187px;
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 60px 187px 0 0;
+}
+
+.navItem {
+  list-style-type: none;
 }
 
 .navLink {
-    color: var(--white-color);
-    text-decoration: none;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: var(--violet-color);
 }
 
 .contacts {
+  border-radius: 20px;
+  background-color: var(--violet-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 60px 30px 62px;
+  margin-top: 38px;
+}
+
+.phone,
+.email {
+  text-decoration: none;
+  color: #000;
+}
+
+.phone {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.email {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.icons a {
+  display: inline-block;
+  transition: transform 0.2s ease-out;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+}
+
+.logoMobileWrapper {
+  display: none;
+}
+
+@media screen and (max-width: 1320px) {
+  .footer {
+    justify-content: space-evenly;
+  }
+  .wrapper {
+    margin: 0;
+  }
+
+  .navList {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navList {
+    margin: 45px 0 47px 0;
+    font-size: 20px;
+    gap: 42px;
+  }
+
+  .contacts {
     border-radius: 20px;
     background-color: var(--violet-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 60px 30px 62px;
-    margin-top: 38px;
-}
+    padding: 25px 33px 22px 30px;
+    margin: 10px 0 80px 0;
+  }
 
-.phone, .email {
-    text-decoration: none;
-    color: #000;
-}
-
-.phone {
-    font-size: 32px;
-    text-transform: uppercase;
-    margin-bottom: 35px;
-}
-
-.email {
+  .phone,
+  .email {
+    margin-bottom: 24px;
     font-size: 24px;
-    margin-bottom: 25px;
-}
+  }
 
-.icons {
-    outline: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+  .icons {
+    padding-left: 5px;
+    gap: 12px;
+  }
+
+  .telegramIcon,
+  .viberIcon {
+    width: 80%;
+  }
+
+  .logoMobileWrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .logoMobile {
+    display: block;
+    position: relative;
+  }
+
+  .logoMobileWrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: 40px;
+    width: 100%;
+    height: 50%;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 30%,
+      rgba(0, 0, 0) 100%
+    );
+    pointer-events: none;
+    border-radius: 50%;
+  }
 }
