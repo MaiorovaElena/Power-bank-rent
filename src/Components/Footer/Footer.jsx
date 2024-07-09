@@ -1,5 +1,4 @@
-import React from "react";
-import st from "./Footer.module.css"; // импортируем стили Footer
+import st from "./Footer.module.css";
 import logo from "../../assets/footer/meteorLogo.svg";
 import telegramIcon from "../../assets/footer/telegramIcon.png";
 import viberIcon from "../../assets/footer/viberIcon.png";

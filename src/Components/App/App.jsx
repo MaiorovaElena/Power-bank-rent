@@ -10,7 +10,7 @@ import st from "./App.module.css";
 function App() {
   return (
     <div className={st.container}>
-      {/* <Header /> */}
+      <Header />
       <RegistrationSection />
       <Benefits />
       <DeviceRent />
