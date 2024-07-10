@@ -2,7 +2,7 @@ import st from "./Prices.module.css";
 
 const Prices = () => {
   return (
-    <section className={st.prices}>
+    <section id="price" className={st.prices}>
       <h3 className={st.title}>Prices</h3>
       <div className={st.wrapper}>
         <div className={st.priceBox}>

@@ -6,7 +6,7 @@ import returnIcon from "../../assets/returnIcon.svg";
 
 const HowToRent = () => {
   return (
-    <section className={st.howToRent}>
+    <section id="howToRent" className={st.howToRent}>
       <h3 className={st.title}>How to Rent</h3>
       <div className={st.steps}>
         <div className={st.step}>
