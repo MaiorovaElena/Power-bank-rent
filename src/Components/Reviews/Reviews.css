@@ -1,0 +1,45 @@
+@import '../../style/_template.css';
+
+.review-container {
+    background-image: url(../../assets/reviews/backg.svg);
+    background-position: center;
+    height: 100vh;
+}
+
+.mySwiper {
+    margin-top: 10%;
+}
+
+.swiper {
+    width: clamp(360px, 95vw,1440px);
+    height: 70vh;
+
+    @media (max-width: 950px) {
+        height: 80vh;
+    }
+}
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+    color: var( --white-color) !important;
+}
+
+.group-container-reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    @media (max-width: 950px) {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+}

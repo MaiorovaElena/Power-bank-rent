@@ -4,7 +4,7 @@ import { useState } from "react";
 import Modal from "react-modal";
 import FormContainer from "../../../Form/FormContainer/FormContainer";
 
-export default function SignUpOffer() {
+export default function SignUpOffer({t, i18n}) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -19,7 +19,7 @@ export default function SignUpOffer() {
 
   return (
     <div className={styles.container}>
-      <SignUpButton onClick={openModal} />
+      <SignUpButton onClick={openModal} t={t} i18n={i18n}/>
       <Modal
         style={{ overlay: { zIndex: 100 } }}
         className={styles.modal}
@@ -29,7 +29,10 @@ export default function SignUpOffer() {
         {modalContent}
       </Modal>
       <div className={styles.offer}>
-        <p>25% discount on the first charge for registering on the site</p>
+        <p>
+          {i18n.t("discount")} <br />
+          {i18n.t("registering")}
+        </p>
       </div>
     </div>
   );

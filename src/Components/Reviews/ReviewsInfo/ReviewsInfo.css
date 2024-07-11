@@ -1,0 +1,9 @@
+@import "../../../style/_template.css";
+
+
+.reviews-info {
+    max-width: clamp(340px,40vw,560px);
+    width: 100%;
+    height: clamp(130px,20vw,330px);
+    overflow: hidden;
+}
