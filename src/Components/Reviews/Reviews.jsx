@@ -22,14 +22,14 @@ export default function Reviews() {
         if (!resultArray[chunkIndex]) {
             resultArray[chunkIndex] = [];
         }
-        item.index = index;
+        // item.index = index;
         resultArray[chunkIndex].push(item);
 
         return resultArray;
     }, []);
 
     return (
-        <div>
+        <div className='review-container'>
             <Swiper navigation={true} modules={[Navigation]} className='mySwiper'>
                 {reviewGroups.map((group, groupIndex) => (
                     <SwiperSlide key={groupIndex}>

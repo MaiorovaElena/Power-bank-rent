@@ -1,28 +1,19 @@
 import './ReviewsBlok.css'
-// import one from '../../../assets/reviews/0.png'
-// import file from '../../../assets/reviews'
-
-import config from '../../../../config'
 
 export default function ReviewsBlok({ review }) {
 
 
-    const { name, text, data, index } = review;
+    const { name, text, data, image } = review;
 
-    console.log(config.imagePath);
-    console.log(index);
-
-    // const fileL =  require(file/${index}.png).default
-    // console.log(review)
     return (
         <div className='reviews-blok'>
-            <div>
-                <img src={`${config.imagePath}${index}.png`} alt={`${index} png`} />
+            <div className='reviews-blok-picture'>
+                <img src={image} className='reviews-blok-img' alt={`image`} />
             </div>
-            <div>
-                <h3>{name}</h3>
-                <p>{text}</p>
-                <p>{data}</p>
+            <div className='reviews-blok-info'>
+                <h3 className='reviews-blok-name'>{name}</h3>
+                <p className='reviews-blok-text'>"{text}"</p>
+                <p className='reviews-blok-data'>{data}</p>
             </div>
         </div>
     )

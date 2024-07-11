@@ -1,16 +1,9 @@
 @import "../../../style/_template.css";
 
-/* .reviews-info {
-    height: 80%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 2%;
-} */
 
 .reviews-info {
-    max-width: 560px;
+    max-width: clamp(340px,40vw,560px);
     width: 100%;
-    /* width: clamp(340px,67vw,560px); */
+    height: clamp(130px,20vw,330px);
+    overflow: hidden;
 }

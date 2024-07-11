@@ -2,81 +2,75 @@
     {
         "name": "milica",
         "text": "Easy and practical service! ",
-        "data": "20.06.24"
+        "data": "20.06.24",
+        "image":"../../../../public/reviews/0.png"
     },
     {
         "name": "Jovan",
         "text": " I use this service every day! Really good!",
-        "data": "21.06.2024"
+        "data": "21.06.2024",
+        "image":"../../../../public/reviews/1.png"
     },
     {
         "name": "Nevera",
         "text": "A real salvation for forgetful people!",
-        "data": "03.08.2024 "
+        "data": "03.08.2024 ",
+        "image":"../../../../public/reviews/2.png"
     },
     {
         "name": "Dragan",
         "text": "Couriers need it 100%",
-        "data": "05.07.2024 "
+        "data": "05.07.2024 ",
+        "image":"../../../../public/reviews/3.png"
     },
     {
         "name": "name",
         "text": "LOLKEK",
-        "data": "25.56.55"
+        "data": "25.56.55",
+        "image":"../../../../public/reviews/4.jpg"
     },
     {
         "name": "NaMe",
         "text": "lolkek",
-        "data": "23.43.43"
+        "data": "23.43.43",
+        "image":"../../../../public/reviews/5.jpg"
     },
     {
         "name": "NAME",
         "text": "kek",
-        "data": "11.11.11"
+        "data": "11.11.11",
+        "image":"../../../../public/reviews/6.jpg"
     },
     {
         "name": "NaME",
         "text": "lol",
-        "data": "33.33.3"
+        "data": "33.33.3",
+        "image":"../../../../public/reviews/7.jpg"
     },
-
-
-
-
-
-
-
-
 
 
     {
         "name": "milica",
         "text": "Easy and practical service! ",
-        "data": "20.06.24"
+        "data": "20.06.24",
+        "image":"../../../../public/reviews/8.jpg"
     },
     {
         "name": "Jovan",
         "text": " I use this service every day! Really good!",
-        "data": "21.06.2024"
+        "data": "21.06.2024",
+        "image":"../../../../public/reviews/9.jpg"
     },
     {
         "name": "Nevera",
         "text": "A real salvation for forgetful people!",
-        "data": "03.08.2024 "
+        "data": "03.08.2024 ",
+        "image":"../../../../public/reviews/10.jpg"
     },
     {
         "name": "Dragan",
         "text": "Couriers need it 100%",
-        "data": "05.07.2024 "
-    },
-    {
-        "name": "name",
-        "text": "LOLKEK",
-        "data": "25.56.55"
-    },
-    {
-        "name": "NaMe",
-        "text": "lolkek",
-        "data": "23.43.43"
+        "data": "05.07.2024 ",
+        "image":"../../../../public/reviews/11.jpg"
     }
 ]
