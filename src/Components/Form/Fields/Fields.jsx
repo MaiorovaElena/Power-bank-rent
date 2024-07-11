@@ -10,25 +10,32 @@ export default function Fields() {
   return (
     <>
       <div>
+        <label htmlFor="name"></label>
         <input
           className={styles.input}
           type="text"
+          name="name"
           placeholder="Name*"
           required
         />
       </div>
       <div>
+        <label htmlFor="tel"></label>
         <input
           className={styles.input}
           type="tel"
+          name="tel"
           placeholder="Phone*"
           required
         />
       </div>
       <div>
+        <label htmlFor="email"></label>
         <input
           className={styles.input}
+          id="email"
           type="email"
+          name="email"
           placeholder="Email*"
           required
         />
