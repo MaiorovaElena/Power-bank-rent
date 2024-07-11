@@ -6,7 +6,7 @@ import IconPhone from "../../../assets/IconPhone.png";
 
 export default function Benefits() {
   return (
-    <div className={styles.container}>
+    <div id="benefits" className={styles.container}>
       <div className={styles.benefits}>
         <h3 className={styles.title}>In the right place at the right time</h3>
         <div className={styles.list}>

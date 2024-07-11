@@ -1,0 +1,106 @@
+.container {
+  font-family: var(--font-family);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-weight: 800;
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-top: clamp(45px, 8vw, 113px);
+  margin-bottom: clamp(45px, 8vw, 120px);
+  text-align: center;
+}
+
+.textWrapper {
+  max-width: 1164px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.violetText {
+  color: var(--violet-color);
+}
+
+.paragraph {
+  font-weight: 800;
+  font-size: clamp(20px, 5vw, 48px);
+  width: 70%;
+  line-height: 100%;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: none;
+  cursor: default;
+  padding: 5px 0;
+}
+
+.animate {
+  animation: typing 3s steps(30, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+.paragraphWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraphWrapper:nth-child(2) {
+  align-self: flex-end;
+}
+
+.item1 {
+  animation-delay: 0s;
+}
+
+.item2 {
+  animation-delay: 1.6s;
+}
+
+.item3 {
+  animation-delay: 3.2s;
+}
+
+.item4 {
+  animation-delay: 6.4s;
+}
+
+.item5 {
+  animation-delay: 9.5s;
+}
+
+.item6 {
+  animation-delay: 11s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  gap: 100px;
+  margin-bottom: clamp (0, 3vw, 127px);
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 17px;
+  }
+}
