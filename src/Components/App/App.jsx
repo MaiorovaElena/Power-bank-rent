@@ -11,6 +11,7 @@ import Faq from "../Faq/Faq";
 import st from "./App.module.css";
 import { useTranslation } from "react-i18next";
 import Reviews from "../Reviews/Reviews";
+import DownloadOffer from "../DownloadOffer/DownloadOffer";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -55,7 +56,6 @@ function App() {
       <InviteFriends />
       <Reviews/>
       <Faq />
-      <DownloadOff>
       <Footer />
     </div>
   );
