@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.faq {
+  font-family: var(--font-family);
+  text-align: left;
+  list-style-type: none;
+  width: 100%;
+  padding: 0 clamp(35px, 9vw, 120px);
+  margin-bottom: clamp(60px, 3vw, 62px);
+}
