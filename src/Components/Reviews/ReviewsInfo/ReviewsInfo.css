@@ -1,0 +1,16 @@
+@import "../../../style/_template.css";
+
+/* .reviews-info {
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2%;
+} */
+
+.reviews-info {
+    max-width: 560px;
+    width: 100%;
+    /* width: clamp(340px,67vw,560px); */
+}

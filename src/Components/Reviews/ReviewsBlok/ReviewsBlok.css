@@ -1,0 +1,12 @@
+@import "../../../style/_template.css";
+
+
+.reviews-blok{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    /* max-width: clamp(340px, 3vw,560px); */
+    max-width: 560px;
+    width: 100%;
+}

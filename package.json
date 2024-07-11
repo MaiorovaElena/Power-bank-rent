@@ -18,7 +18,8 @@
     "react-i18next": "^14.1.2",
     "react-mobile-app-button": "^1.2.18",
     "react-modal": "^3.16.1",
-    "react-router-dom": "^6.24.1"
+    "react-router-dom": "^6.24.1",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

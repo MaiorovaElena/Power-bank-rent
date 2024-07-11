@@ -8,6 +8,7 @@ import Prices from "../Prices/Prices";
 import RegistrationSection from "../Registration/RegistrationSection/RegistrationSection";
 import st from "./App.module.css";
 import { useTranslation } from "react-i18next";
+import Reviews from "../Reviews/Reviews";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -48,6 +49,7 @@ function App() {
       <DeviceRent />
       <HowToRent howToRentRef={howToRentRef} />
       <Prices pricesRef={pricesRef}/>
+      <Reviews/>
       <Footer />
     </div>
   );
