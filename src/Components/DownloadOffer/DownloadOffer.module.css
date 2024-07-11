@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  background: url("../../assets/offer/Gradient.png");
+  background-size: cover;
+  margin-bottom: 500px;
+}
+
+.qr {
+  display: flex;
+  align-items: end;
+  width: 100%;
+}
+
+.image {
+  height: 242px;
+  width: 242px;
+  object-fit: cover;
+}
+
+.content {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--white-color);
+  margin-top: 35px;
+  margin-bottom: 50px;
+}

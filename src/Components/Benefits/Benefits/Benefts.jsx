@@ -1,8 +1,8 @@
 import Map from "../Map/Map";
 import styles from "./Benefits.module.css";
-import IconMap from "../../../assets/IconMap.png";
-import IconMoney from "../../../assets/IconMoney.png";
-import IconPhone from "../../../assets/IconPhone.png";
+import IconMap from "../../../assets/benefits/IconMap.png";
+import IconMoney from "../../../assets/benefits/IconMoney.png";
+import IconPhone from "../../../assets/benefits/IconPhone.png";
 
 export default function Benefits() {
   return (

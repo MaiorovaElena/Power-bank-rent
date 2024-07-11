@@ -7,7 +7,11 @@ export default function FormContainer() {
   return (
     <div className={styles.container}>
       <Title />
-      <form className={styles.form}>
+      <form
+        className={styles.form}
+        action="https://formspree.io/f/mqazknww"
+        method="POST"
+      >
         <Fields />
         <FormButton />
       </form>
