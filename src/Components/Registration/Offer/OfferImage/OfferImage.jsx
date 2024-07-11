@@ -1,5 +1,5 @@
 import styles from "./OfferImage.module.css";
-import image from "../../../../assets/Phone.png";
+import image from "../../../../assets/offer/Phone.png";
 
 export default function OfferImage() {
   return (

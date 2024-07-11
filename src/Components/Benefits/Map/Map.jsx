@@ -1,4 +1,4 @@
-import image from "../../../assets/Map.png";
+import image from "../../../assets/benefits/Map.png";
 import styles from "./Map.module.css";
 
 export default function Map() {
