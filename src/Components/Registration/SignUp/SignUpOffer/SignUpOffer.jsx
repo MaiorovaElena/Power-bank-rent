@@ -19,7 +19,7 @@ export default function SignUpOffer({t, i18n}) {
 
   return (
     <div className={styles.container}>
-      <SignUpButton onClick={openModal} />
+      <SignUpButton onClick={openModal} t={t} i18n={i18n}/>
       <Modal
         style={{ overlay: { zIndex: 100 } }}
         className={styles.modal}

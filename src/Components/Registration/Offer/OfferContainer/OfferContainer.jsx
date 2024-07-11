@@ -5,10 +5,10 @@ import AppButton from "../../../Common/Buttons/AppButton";
 import styles from "./OfferContainer.module.css";
 import phoneImage from "../../../../assets/offer/Phone.png";
 
-export default function OfferContainer() {
+export default function OfferContainer({ i18n}) {
   return (
     <div className={styles.container}>
-      <OfferText />
+      <OfferText i18n={i18n}/>
       <div className={styles.device}>
         <div className={styles.deviceTitle}>
           <h3 className={styles.titleLight}>Is your phone dying?</h3>

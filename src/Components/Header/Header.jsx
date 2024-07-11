@@ -4,7 +4,7 @@ import { useState } from 'react';
 import btnOpen from "../../assets/header/open-menu.svg";
 import BurgerMenu from './BurgerMenu/BurgerMenu';
 
-export default function Header({howToRentScroll, benefitsScroll, homeScroll, pricesScroll, changeLanguage, t}) {
+export default function Header({howToRentScroll, benefitsScroll, homeScroll, pricesScroll, changeLanguage, t, i18n}) {
   const [classActive, setClassActive] = useState(null);
   const [classActiveMenu, setClassActiveMenu] = useState(null);
 
@@ -39,15 +39,11 @@ export default function Header({howToRentScroll, benefitsScroll, homeScroll, pri
 
     const clickedElement = event.currentTarget;
 
-    // Убираем класс active у предыдущего активного элемента
     if (classActive) {
       classActive.classList.remove(st.active);
     }
-
-    // Добавляем класс active к текущему элементу
     clickedElement.classList.add(st.active);
 
-    // Обновляем состояние, чтобы хранить текущий активный элемент
     setClassActive(clickedElement);
   }
 
@@ -101,6 +97,7 @@ export default function Header({howToRentScroll, benefitsScroll, homeScroll, pri
             benefitsScroll={benefitsScroll}
             homeScroll={homeScroll}
             pricesScroll={pricesScroll}
+            i18n={i18n}
         />
       </div>
     </div>

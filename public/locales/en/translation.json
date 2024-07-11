@@ -4,5 +4,7 @@
     "price" : "price",
     "faq" : "faq",
     "discount":"25% discount on the first charge for",
-    "registering":"registering on the site"
+    "registering":"registering on the site",
+    "sign-up":"Sign Up",
+    "rent-a-power":"Rent a power bank for the price of a cup of coffee. In the right place at the right time"
 }

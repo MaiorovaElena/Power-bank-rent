@@ -8,7 +8,7 @@ export default function RegistrationSection({homeRef, t, i18n}) {
     <div className={styles.registration} ref={homeRef}>
       <SignUpOffer t={t} i18n={i18n}/>
       <div className={styles.container}>
-        <OfferContainer />
+        <OfferContainer i18n={i18n} />
         <OfferImage />
       </div>
     </div>

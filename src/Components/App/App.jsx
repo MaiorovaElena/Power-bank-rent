@@ -8,12 +8,8 @@ import Prices from "../Prices/Prices";
 import RegistrationSection from "../Registration/RegistrationSection/RegistrationSection";
 import Faq from "../Faq/Faq";
 import st from "./App.module.css";
-<<<<<<< HEAD
 import { useTranslation } from "react-i18next";
 import Reviews from "../Reviews/Reviews";
-=======
-import DownloadOffer from "../DownloadOffer/DownloadOffer";
->>>>>>> cb2719dce7dc3f5f8396fb661bc0a5ac00517ae2
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -48,6 +44,7 @@ function App() {
         pricesScroll={pricesScroll}
         changeLanguage={changeLanguage}
         t={t}
+        i18n={i18n}
         />
       <RegistrationSection homeRef={homeRef} t={t} i18n={i18n}/>
       <Benefits benefitsRef={benefitsRef}/>
@@ -55,6 +52,7 @@ function App() {
       <HowToRent howToRentRef={howToRentRef} />
       <Prices pricesRef={pricesRef}/>
       <Reviews/>
+      <Faq/>
       <Footer />
     </div>
   );
