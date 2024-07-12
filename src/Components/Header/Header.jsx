@@ -4,7 +4,7 @@ import { useState } from 'react';
 import btnOpen from "../../assets/header/open-menu.svg";
 import BurgerMenu from './BurgerMenu/BurgerMenu';
 
-export default function Header({howToRentScroll, benefitsScroll, homeScroll, pricesScroll, changeLanguage, t, i18n}) {
+export default function Header({howToRentScroll, benefitsScroll, homeScroll, pricesScroll, faqScroll, changeLanguage, t, i18n}) {
   const [classActive, setClassActive] = useState(null);
   const [classActiveMenu, setClassActiveMenu] = useState(null);
 
@@ -66,7 +66,7 @@ export default function Header({howToRentScroll, benefitsScroll, homeScroll, pri
                 <li className={st.menuLi} onClick={benefitsScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("benefits")}</a></li>
                 <li className={st.menuLi} onClick={howToRentScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("howToRent")}</a></li>
                 <li className={st.menuLi} onClick={pricesScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("price")}</a></li>
-                <li className={st.menuLi} ><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>faq</a></li>
+                <li className={st.menuLi} onClick={faqScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>faq</a></li>
               </ul>
             </nav>
             <div className={st.language}>

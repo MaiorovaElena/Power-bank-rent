@@ -43,6 +43,7 @@ function App() {
         benefitsScroll={benefitsScroll}
         homeScroll={homeScroll}
         pricesScroll={pricesScroll}
+        faqScroll={faqScroll}
         changeLanguage={changeLanguage}
         t={t}
         i18n={i18n}
