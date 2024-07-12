@@ -1,10 +1,10 @@
 import st from "./HowToRent.module.css";
-import search from "../../assets/search.svg";
-import qrIcon from "../../assets/qrIcon.svg";
-import battery from "../../assets/battery.svg";
-import returnIcon from "../../assets/returnIcon.svg";
+import search from "../../assets/howToRent/search.svg";
+import qrIcon from "../../assets/howToRent/qrIcon.svg";
+import battery from "../../assets/howToRent/battery.svg";
+import returnIcon from "../../assets/howToRent/returnIcon.svg";
 
-const HowToRent = ({howToRentRef}) => {
+const HowToRent = ({ howToRentRef }) => {
   return (
     <section className={st.howToRent} ref={howToRentRef}>
       <h3 className={st.title}>How to Rent</h3>

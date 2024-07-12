@@ -18,24 +18,23 @@ function App() {
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
-  }
-
+  };
 
   const homeRef = useRef(null);
   const benefitsRef = useRef(null);
   const howToRentRef = useRef(null);
   const pricesRef = useRef(null);
+  const faqRef = useRef(null);
 
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
-
   const homeScroll = () => scrollToRef(homeRef);
   const benefitsScroll = () => scrollToRef(benefitsRef);
   const howToRentScroll = () => scrollToRef(howToRentRef);
   const pricesScroll = () => scrollToRef(pricesRef);
-
+  const faqScroll = () => scrollToRef(faqRef);
 
   return (
     <div className={st.container}>
@@ -47,16 +46,21 @@ function App() {
         changeLanguage={changeLanguage}
         t={t}
         i18n={i18n}
-        />
-      <RegistrationSection homeRef={homeRef} t={t} i18n={i18n}/>
-      <Benefits benefitsRef={benefitsRef}/>
+      />
+      <RegistrationSection homeRef={homeRef} t={t} i18n={i18n} />
+      <Benefits benefitsRef={benefitsRef} />
       <DeviceRent />
       <HowToRent howToRentRef={howToRentRef} />
-      <Prices pricesRef={pricesRef}/>
+      <Prices pricesRef={pricesRef} />
       <InviteFriends />
-      <Reviews/>
-      <Faq />
-      <Footer />
+      <Reviews />
+      <Faq faqRef={faqRef} />
+      <Footer
+        benefitsScroll={benefitsScroll}
+        howToRentScroll={howToRentScroll}
+        pricesScroll={pricesScroll}
+        faqScroll={faqScroll}
+      />
     </div>
   );
 }

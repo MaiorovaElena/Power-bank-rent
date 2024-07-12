@@ -8,12 +8,12 @@
 
   @media screen and (max-width: 910px) {
     margin-top: 30px;
-}
+  }
 
   @media screen and (max-width: 380px) {
     margin-bottom: -36px;
     margin-top: 0;
-}
+  }
 }
 
 .title {
@@ -30,29 +30,29 @@
   display: flex;
   flex-direction: column;
   margin: 0 120px;
-  
+
   @media screen and (max-width: 950px) {
-    margin: 20px; 
-}
+    margin: 20px;
+  }
 }
 
 .step {
   display: flex;
 
   @media screen and (max-width: 950px) {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .step:nth-child(even) {
   justify-content: flex-end;
 
-    @media screen and (max-width: 950px) {
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: center;
+  @media screen and (max-width: 950px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -75,7 +75,7 @@
     width: 45px;
     height: 45px;
     flex: 0 0 45px;
-}
+  }
 }
 
 .step:nth-child(even) .number {
@@ -83,7 +83,7 @@
 
   @media screen and (max-width: 950px) {
     margin: 0 0 15px 0;
-}
+  }
 }
 
 .gradient_container {
@@ -97,17 +97,17 @@
     padding: 0;
     margin-bottom: 30px;
     flex-grow: 0;
-}
+  }
 }
 
 .gradient_container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   left: 1px;
   right: 0;
   bottom: 0;
-  background: url('../../assets/gradient.png') no-repeat center;
+  background: url("../../assets/howToRent/gradient.png") no-repeat center;
   background-size: cover;
   z-index: -1;
   max-width: 879px;
@@ -181,32 +181,32 @@
 }
 
 @media screen and (max-width: 1032px) {
-.description {
+  .description {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 950px) {
   .description {
-  padding: 0 30px;
-  text-align: center;
-  margin-top: 15px;
-  font-size: clamp(20px, 3vw, 30px);
-}
+    padding: 0 30px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: clamp(20px, 3vw, 30px);
+  }
 
-.step:nth-child(2) .description {
-  text-align: center;
-  padding: 0 30px;
-}
+  .step:nth-child(2) .description {
+    text-align: center;
+    padding: 0 30px;
+  }
 
-.step:nth-child(3) .description {
-  padding: 0 30px;
-}
+  .step:nth-child(3) .description {
+    padding: 0 30px;
+  }
 
-.step:nth-child(4) .description {
-  text-align: center;
-  padding: 0 30px;
-}
+  .step:nth-child(4) .description {
+    text-align: center;
+    padding: 0 30px;
+  }
 }
 
 .image {
@@ -222,13 +222,13 @@
 
 @media screen and (max-width: 950px) {
   .image {
-  width: clamp(45px, 8vw, 60px);
-  height: clamp(45px, 8vw, 60px);
-  padding: 0;
-  margin-bottom: 10px;
-}
+    width: clamp(45px, 8vw, 60px);
+    height: clamp(45px, 8vw, 60px);
+    padding: 0;
+    margin-bottom: 10px;
+  }
 
-.step:nth-child(even) .image {
-  padding-left: 0;
-}
+  .step:nth-child(even) .image {
+    padding-left: 0;
+  }
 }
