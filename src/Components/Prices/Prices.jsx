@@ -1,8 +1,8 @@
 import st from "./Prices.module.css";
 
-const Prices = ({pricesRef}) => {
+const Prices = ({ pricesRef }) => {
   return (
-    <section className={st.prices} ref={pricesRef}>
+    <section className={st.container} ref={pricesRef}>
       <h3 className={st.title}>Prices</h3>
       <div className={st.wrapper}>
         <div className={st.priceBox}>

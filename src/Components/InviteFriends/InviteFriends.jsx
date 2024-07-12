@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import st from "./InviteFriends.module.css";
 import AppButton from "../Common/Buttons/AppButton.jsx";
 import GoogleButton from "../Common/Buttons/GoogleButton.jsx";
 import useIntersectionObserver from "./hooks/useIntersectionObserver.jsx";
+import rightArrow from "../../assets/inviteFriends/right-arrow.svg";
+import leftArrow from "../../assets/inviteFriends/left-arrow.svg";
 
 const InviteFriends = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [showRightArrow, setShowRightArrow] = useState(false);
+  const [showLeftArrow, setShowLeftArrow] = useState(false);
 
   const startAnimation = () => {
     setIsVisible(true);
@@ -15,8 +19,20 @@ const InviteFriends = () => {
     threshold: 0.5,
   });
 
+  useEffect(() => {
+    if (isVisible) {
+      const rightArrowTimeout = setTimeout(() => setShowRightArrow(true), 2900);
+      const leftArrowTimeout = setTimeout(() => setShowLeftArrow(true), 9100);
+
+      return () => {
+        clearTimeout(rightArrowTimeout);
+        clearTimeout(leftArrowTimeout);
+      };
+    }
+  }, [isVisible]);
+
   return (
-    <section id="inviteFriends" className={st.container} ref={elementRef}>
+    <section className={st.container} ref={elementRef}>
       <h3 className={st.title}>Invite friends</h3>
       <div className={st.textWrapper}>
         <div className={st.paragraphWrapper}>
@@ -68,11 +84,21 @@ const InviteFriends = () => {
             rental as a<span className={st.violetText}> gift</span>
           </p>
         </div>
-        <div className={st.buttonWrapper}>
-          <GoogleButton />
-          <AppButton />
-        </div>
       </div>
+      <div className={st.buttonWrapper}>
+        <GoogleButton />
+        <AppButton />
+      </div>
+      <img
+        src={rightArrow}
+        className={`${st.rightArrow} ${showRightArrow ? st.show : ""}`}
+        alt="right arrow"
+      />
+      <img
+        src={leftArrow}
+        className={`${st.leftArrow} ${showLeftArrow ? st.show : ""}`}
+        alt="left arrow"
+      />
     </section>
   );
 };

@@ -6,10 +6,10 @@ import returnIcon from "../../assets/howToRent/returnIcon.svg";
 
 const HowToRent = ({ howToRentRef }) => {
   return (
-    <section className={st.howToRent} ref={howToRentRef}>
+    <section className={st.container} ref={howToRentRef}>
       <h3 className={st.title}>How to Rent</h3>
-      <div className={st.steps}>
-        <div className={st.step}>
+      <ol className={st.steps}>
+        <li className={st.step}>
           <span className={st.number}>1</span>
           <div className={st.gradient_container}>
             <div className={st.border}>
@@ -17,8 +17,8 @@ const HowToRent = ({ howToRentRef }) => {
               <img className={st.image} src={search} alt="search" />
             </div>
           </div>
-        </div>
-        <div className={st.step}>
+        </li>
+        <li className={st.step}>
           <div className={st.gradient_container}>
             <div className={st.border}>
               <img className={st.image} src={qrIcon} alt="qr-icon" />
@@ -26,8 +26,8 @@ const HowToRent = ({ howToRentRef }) => {
             </div>
           </div>
           <span className={st.number}>2</span>
-        </div>
-        <div className={st.step}>
+        </li>
+        <li className={st.step}>
           <span className={st.number}>3</span>
           <div className={st.gradient_container}>
             <div className={st.border}>
@@ -35,8 +35,8 @@ const HowToRent = ({ howToRentRef }) => {
               <img className={st.image} src={battery} alt="battery" />
             </div>
           </div>
-        </div>
-        <div className={st.step}>
+        </li>
+        <li className={st.step}>
           <div className={st.gradient_container}>
             <div className={st.border}>
               <img className={st.image} src={returnIcon} alt="return-icon" />
@@ -46,8 +46,8 @@ const HowToRent = ({ howToRentRef }) => {
             </div>
           </div>
           <span className={st.number}>4</span>
-        </div>
-      </div>
+        </li>
+      </ol>
     </section>
   );
 };

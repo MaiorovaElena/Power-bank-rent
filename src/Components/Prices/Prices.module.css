@@ -1,113 +1,113 @@
-.prices {
-    font-family: var(--font-family);
-    color: var(--white-color);
-    display: flex;
-    flex-direction: column;
+.container {
+  font-family: var(--font-family);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-top: clamp(30px, 5vw, 60px);
+  margin-bottom: clamp(25px, 5vw, 60px);
+  text-align: center;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 clamp(35px, 9vw, 120px);
+  margin-bottom: clamp(60px, 3vw, 62px);
+}
+
+.priceBox {
+  background-color: var(--violet-color);
+  border-radius: 35px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.mainPrice {
+  font-weight: 800;
+  font-size: clamp(30px, 5vw, 64px);
+  line-height: 100%;
+  padding: clamp(15px, 5vw, 60px) 82px;
+  text-align: center;
+}
+
+.subscriptions {
+  display: flex;
+  gap: clamp(10px, 8vw, 40px);
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+
+  @media screen and (max-width: 1224px) {
     justify-content: center;
-    align-items:center;
-    width: 100%;
-    margin-top: 50px;
-  }
-  
-  .title {
-    font-weight: 800;
-    font-size: clamp(30px, 3vw, 40px);
-    line-height: 100%;
-    text-transform: uppercase;
-    margin-top: clamp(30px, 5vw, 60px);
-    margin-bottom: clamp(25px, 5vw, 60px);
-    text-align: center;
-  }
-
-  .wrapper {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 clamp(35px, 9vw, 120px);
-    margin-bottom: clamp(60px, 3vw, 62px);
-  }
-  
-  .priceBox {
-    background-color: var(--violet-color);
-    border-radius: 35px;
-    margin-bottom: 30px;
-    width: 100%;
-  }
-
-  .mainPrice {
-    font-weight: 800;
-    font-size: clamp(30px, 5vw, 64px);
-    line-height: 100%;
-    padding: clamp(15px, 5vw, 60px) 82px;
-    text-align: center;
-  }
-  
-  .subscriptions {
-    display: flex;
-    gap: clamp(10px, 8vw, 40px);
-    align-items: start;
-    justify-content: space-between;
-    width: 100%;
-
-    @media screen and (max-width:1224px) {
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }    
-  }
-  
-  .subscription {
-    box-sizing: border-box;
-    border: 3px solid var(--violet-color);
-    border-radius: 25px;
-    flex: 1 1 310px;
-    max-width: 360px;
-    min-width: 310px;
-    max-height: 302px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
   }
-  
-  .term, .price {
-    font-weight: 500;
-    font-size: clamp(24px, 5vw, 32px);
-    line-height: 100%;
-    text-align: center;
-    padding: 0 37px;
-  }
+}
 
-  .subscription:nth-child(1) {
-    padding: 130px 0 165px 0;
+.subscription {
+  box-sizing: border-box;
+  border: 3px solid var(--violet-color);
+  border-radius: 25px;
+  flex: 1 1 310px;
+  max-width: 360px;
+  min-width: 310px;
+  max-height: 302px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    @media screen and (max-width:1224px) {
-        display: none;
-    }
-  }
+.term,
+.price {
+  font-weight: 500;
+  font-size: clamp(24px, 5vw, 32px);
+  line-height: 100%;
+  text-align: center;
+  padding: 0 37px;
+}
 
-  .discount {
-    color: var(--violet-color);
-    font-weight: 600;
-    font-size: clamp(36px, 3vw, 48px);
-    line-height: 100%;
-    padding: 16px 0;
-  }
-  
-  .divider {
-    background-color: var(--violet-color);
-    border: 1px solid #9153df;
-    max-width: 240px;
-    width: 100%;
-    margin-top: clamp(13px, 3vw, 30px);
-    margin-bottom: clamp(20px, 3vw, 30px);
-  }
-  
-  .price {
-    margin-bottom: 30px;
-    line-height: 105%;
-  }
+.subscription:nth-child(1) {
+  padding: 130px 0 165px 0;
 
-  .price span {
-    color: var(--violet-color);
-    font-size: 32px;
+  @media screen and (max-width: 1224px) {
+    display: none;
   }
-  
+}
+
+.discount {
+  color: var(--violet-color);
+  font-weight: 600;
+  font-size: clamp(36px, 3vw, 48px);
+  line-height: 100%;
+  padding: 16px 0;
+}
+
+.divider {
+  background-color: var(--violet-color);
+  border: 1px solid #9153df;
+  max-width: 240px;
+  width: 100%;
+  margin-top: clamp(13px, 3vw, 30px);
+  margin-bottom: clamp(20px, 3vw, 30px);
+}
+
+.price {
+  margin-bottom: 30px;
+  line-height: 105%;
+}
+
+.price span {
+  color: var(--violet-color);
+  font-size: 32px;
+}

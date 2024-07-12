@@ -109,7 +109,7 @@
 }
 
 @media screen and (max-width: 950px) {
-  .footer {
+  .container {
     flex-direction: column;
     align-items: center;
     padding: 30px;
