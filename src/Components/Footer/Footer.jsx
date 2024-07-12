@@ -1,63 +1,58 @@
+import { useState } from "react";
 import st from "./Footer.module.css";
 import logo from "../../assets/footer/meteorLogo.svg";
 import telegramIcon from "../../assets/footer/telegramIcon.png";
 import viberIcon from "../../assets/footer/viberIcon.png";
 
-const Footer = () => {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+export default function Footer({
+  howToRentScroll,
+  benefitsScroll,
+  pricesScroll,
+  faqScroll,
+}) {
+  const [classActiveMenu, setClassActiveMenu] = useState(null);
+
+  function clickMenuList(event) {
+    event.preventDefault();
+
+    if (classActiveMenu) {
+      classActiveMenu.classList.remove(st.active);
     }
-  };
+    const clickedElement = event.currentTarget;
+    clickedElement.classList.add(st.active);
+    setClassActiveMenu(clickedElement);
+  }
 
   return (
-    <div className={st.footer}>
+    <footer className={st.container}>
       <div className={st.wrapper}>
         <h1 className={st.title}>Meteor</h1>
         <img className={st.logo} src={logo} alt="logo Meteor" />
       </div>
-      <nav className={st.nav}>
+      <nav>
         <ul className={st.navList}>
-          <li className={st.navItem}>
-            <a
-              className={st.navLink}
-              href="#benefits"
-              onClick={() => scrollToSection("benefits")}
-            >
-              Benefits
+          <li className={st.navItem} onClick={benefitsScroll}>
+            <a href="" className={st.navLink} onClick={clickMenuList}>
+              {"benefits"}
             </a>
           </li>
-          <li className={st.navItem}>
-            <a
-              className={st.navLink}
-              href="#howToRent"
-              onClick={() => scrollToSection("howToRent")}
-            >
-              How to rent
+          <li className={st.navItem} onClick={howToRentScroll}>
+            <a href="" className={st.navLink} onClick={clickMenuList}>
+              {"how to rent"}
             </a>
           </li>
-          <li className={st.navItem}>
-            <a
-              className={st.navLink}
-              href="#price"
-              onClick={() => scrollToSection("price")}
-            >
-              Price
+          <li className={st.navItem} onClick={pricesScroll}>
+            <a href="" className={st.navLink} onClick={clickMenuList}>
+              {"price"}
             </a>
           </li>
-          <li className={st.navItem}>
-            <a
-              className={st.navLink}
-              href="#faq"
-              onClick={() => scrollToSection("faq")}
-            >
-              FAQ
+          <li className={st.navItem} onClick={faqScroll}>
+            <a href="" className={st.navLink} onClick={clickMenuList}>
+              {"faq"}
             </a>
           </li>
         </ul>
       </nav>
-
       <div className={st.contacts}>
         <a className={st.phone} href="tel:+011XXXXXXXX">
           0 11 XXX XXXX
@@ -89,8 +84,6 @@ const Footer = () => {
       <div className={st.logoMobileWrapper}>
         <img className={st.logoMobile} src={logo} alt="logo" />
       </div>
-    </div>
+    </footer>
   );
-};
-
-export default Footer;
+}
