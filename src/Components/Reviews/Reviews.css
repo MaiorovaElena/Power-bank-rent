@@ -3,11 +3,12 @@
 .review-container {
     background-image: url(../../assets/reviews/backg.svg);
     background-position: center;
-    height: 100vh;
+    height: 85vh;
+    margin-top: 5%;
 }
 
 .mySwiper {
-    margin-top: 10%;
+    margin-top: 9%;
 }
 
 .swiper {

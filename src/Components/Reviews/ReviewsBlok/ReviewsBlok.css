@@ -26,8 +26,8 @@
     height: clamp(100px,18vw,300px);
     border-radius: 20px;
     object-fit: cover;
-    object-position: top right;
-    object-position:center;
+    object-position: 5% 5%;
+    /* object-position:center; */
 }
 
 .reviews-blok-info {
