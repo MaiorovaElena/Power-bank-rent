@@ -11,7 +11,7 @@ import Faq from "../Faq/Faq";
 import st from "./App.module.css";
 import { useTranslation } from "react-i18next";
 import Reviews from "../Reviews/Reviews";
-import DownloadOffer from "../DownloadOffer/DownloadOffer";
+// import DownloadOffer from "../DownloadOffer/DownloadOffer";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -57,12 +57,12 @@ function App() {
       <Reviews />
       <Faq faqRef={faqRef} />
       {/* <DownloadOffer /> */}
-      {/* <Footer
+      <Footer
         benefitsScroll={benefitsScroll}
         howToRentScroll={howToRentScroll}
         pricesScroll={pricesScroll}
         faqScroll={faqScroll}
-      /> */}
+      />
     </div>
   );
 }
