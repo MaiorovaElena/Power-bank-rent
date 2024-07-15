@@ -1,5 +1,5 @@
 import st from './Header.module.css';
-import logo from '../../assets/logo.svg';
+import logoImg from '../../assets/header/meteoriteGraphics.svg'
 import { useState } from 'react';
 import btnOpen from "../../assets/header/open-menu.svg";
 import BurgerMenu from './BurgerMenu/BurgerMenu';
@@ -87,7 +87,7 @@ export default function Header({howToRentScroll, benefitsScroll, homeScroll, pri
 
         </div>
         <div className={st.logo} >
-          <img src={logo} className={st.logoImg} />
+          <img src={logoImg} className={st.logoImg} />
         </div>
 
         <BurgerMenu
