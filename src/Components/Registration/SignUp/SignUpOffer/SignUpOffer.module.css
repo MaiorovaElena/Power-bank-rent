@@ -38,6 +38,6 @@
   }
 
   .modal {
-    top: 33%;
+    touch-action: none;
   }
 }
