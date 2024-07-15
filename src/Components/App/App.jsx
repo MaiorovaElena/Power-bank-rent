@@ -24,6 +24,7 @@ function App() {
   const benefitsRef = useRef(null);
   const howToRentRef = useRef(null);
   const pricesRef = useRef(null);
+  const faqRef = useRef(null);
 
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
@@ -33,6 +34,8 @@ function App() {
   const benefitsScroll = () => scrollToRef(benefitsRef);
   const howToRentScroll = () => scrollToRef(howToRentRef);
   const pricesScroll = () => scrollToRef(pricesRef);
+  const faqScroll = () => scrollToRef(faqRef);
+
 
   return (
     <div className={st.container}>
@@ -52,9 +55,13 @@ function App() {
       <Prices pricesRef={pricesRef} />
       <InviteFriends />
       <Reviews />
-      <Faq />
-      <DownloadOffer />
-      <Footer />
+      <Faq faqRef={faqRef} />
+      <Footer
+        benefitsScroll={benefitsScroll}
+        howToRentScroll={howToRentScroll}
+        pricesScroll={pricesScroll}
+        faqScroll={faqScroll}
+      />
     </div>
   );
 }

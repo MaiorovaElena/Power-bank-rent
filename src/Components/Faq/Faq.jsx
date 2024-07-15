@@ -37,11 +37,11 @@ const questions = [
   },
 ];
 
-export default function Faq() {
+export default function Faq({ faqRef }) {
   const [openId, setId] = useState(null);
 
   return (
-    <div>
+    <div ref={faqRef}>
       <h3 className={styles.title}>FAQ</h3>
       <div className={styles.container}>
         <ul className={styles.faq}>
