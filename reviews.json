@@ -3,49 +3,49 @@
         "name": "milica",
         "text": "Easy and practical service! ",
         "data": "20.06.24",
-        "image":"../../../../public/reviews/0.png"
+        "image":"reviews/0.png"
     },
     {
         "name": "Jovan",
         "text": " I use this service every day! Really good!",
         "data": "21.06.24",
-        "image":"../../../../public/reviews/1.png"
+        "image":"reviews/1.png"
     },
     {
         "name": "Nevera",
         "text": "A real salvation for forgetful people!",
         "data": "03.08.24 ",
-        "image":"../../../../public/reviews/2.png"
+        "image":"reviews/2.png"
     },
     {
         "name": "Dragan",
         "text": "Couriers need it 100%",
         "data": "05.07.24 ",
-        "image":"../../../../public/reviews/3.png"
+        "image":"reviews/3.png"
     },
     {
         "name": "Edward",
         "text": "Easy and practical service!",
         "data": "25.06.24",
-        "image":"../../../../public/reviews/4.jpg"
+        "image":"reviews/4.jpg"
     },
     {
         "name": "Adeline",
         "text": "Couriers need it 100%",
         "data": "23.04.24",
-        "image":"../../../../public/reviews/5.jpg"
+        "image":"reviews/5.jpg"
     },
     {
         "name": "Richard",
         "text": "A real salvation for forgetful people!",
         "data": "11.04.24",
-        "image":"../../../../public/reviews/6.jpg"
+        "image":"reviews/6.jpg"
     },
     {
         "name": "Camilla",
         "text": "I use this service every day! Really good!",
         "data": "03.06.24",
-        "image":"../../../../public/reviews/7.jpg"
+        "image":"public/reviews/7.jpg"
     },
 
 
@@ -53,24 +53,24 @@
         "name": "milica",
         "text": "Easy and practical service! ",
         "data": "20.06.24",
-        "image":"../../../../public/reviews/8.jpg"
+        "image":"public/reviews/8.jpg"
     },
     {
         "name": "Jovan",
         "text": " I use this service every day! Really good!",
         "data": "21.06.24",
-        "image":"../../../../public/reviews/9.jpg"
+        "image":"public/reviews/9.jpg"
     },
     {
         "name": "Nevera",
         "text": "A real salvation for forgetful people!",
         "data": "03.08.24 ",
-        "image":"../../../../public/reviews/10.jpg"
+        "image":"public/reviews/10.jpg"
     },
     {
         "name": "Dragan",
         "text": "Couriers need it 100%",
         "data": "05.07.24 ",
-        "image":"../../../../public/reviews/11.jpg"
+        "image":"public/reviews/11.jpg"
     }
 ]

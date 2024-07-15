@@ -3,19 +3,31 @@
 .review-container {
     background-image: url(../../assets/reviews/backg.svg);
     background-position: center;
-    height: 100vh;
+    height: 78vh;
+    margin-top: 5%;
+    background-size: auto 78vh;
+
+    @media (max-width: 375px) {
+        height: 100vh;
+        background-size: auto 100vh;
+    }
 }
 
 .mySwiper {
-    margin-top: 10%;
+    margin-top: 4%;
 }
 
 .swiper {
     width: clamp(360px, 95vw,1440px);
     height: 70vh;
 
-    @media (max-width: 950px) {
-        height: 80vh;
+    @media (max-width: 400px){
+        height: 73vh;
+    }
+
+    @media (max-width: 375px) {
+        /* height: 80vh; */
+        height: 100vh;
     }
 }
 
@@ -41,5 +53,8 @@
     @media (max-width: 950px) {
         grid-template-columns: 1fr;
         gap: 2%;
+        justify-content: center;
+        height: 90%;
+        margin-top: 10%;
     }
 }

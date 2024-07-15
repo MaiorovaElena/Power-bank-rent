@@ -11,6 +11,7 @@
   max-width: 1400px;
   width: 100%;
   z-index: 3;
+  overflow: hidden;
 }
 
 .container {
@@ -29,6 +30,7 @@
 
 .title {
   display: flex;
+  cursor: pointer;
 }
 
 .titleText {
@@ -82,6 +84,10 @@
   padding: 0 5% 0 5%;
 }
 
+.logo {
+  width: 30%;
+}
+
 .logoImg {
   width: 100%;
 }
@@ -129,6 +135,10 @@
     height: 198px;
   }
 
+  .container {
+    height: 100%;
+  }
+
   .menu {
     display: none;
   }
@@ -168,4 +178,9 @@
     justify-content: space-between;
     width: 80%;
   }
+
+  .logo {
+    width: 60%;
+  }
+
 }
