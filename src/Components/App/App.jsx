@@ -36,6 +36,7 @@ function App() {
   const pricesScroll = () => scrollToRef(pricesRef);
   const faqScroll = () => scrollToRef(faqRef);
 
+
   return (
     <div className={st.container}>
       <Header
