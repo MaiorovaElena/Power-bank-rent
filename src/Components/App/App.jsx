@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Benefits from "../Benefits/Benefits/Benefts";
 import DeviceRent from "../DeviceRent/DeviceRent";
-import Footer from "../Footer/Footer";
+// import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import HowToRent from "../HowToRent/HowToRent";
 import InviteFriends from "../InviteFriends/InviteFriends";
@@ -56,12 +56,12 @@ function App() {
       <InviteFriends />
       <Reviews />
       <Faq faqRef={faqRef} />
-      <Footer
+      {/* <Footer
         benefitsScroll={benefitsScroll}
         howToRentScroll={howToRentScroll}
         pricesScroll={pricesScroll}
         faqScroll={faqScroll}
-      />
+      /> */}
     </div>
   );
 }
