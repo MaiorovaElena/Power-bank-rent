@@ -1,6 +1,5 @@
 import Title from "../Title/Title";
 import styles from "./FormContainer.module.css";
-import FormButton from "../FormButton/FormButton";
 import Fields from "../Fields/Fields";
 
 export default function FormContainer() {
@@ -13,7 +12,6 @@ export default function FormContainer() {
         method="POST"
       >
         <Fields />
-        <FormButton />
       </form>
     </div>
   );

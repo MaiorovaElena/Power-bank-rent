@@ -43,8 +43,9 @@
   .container {
     height: 12vw;
     width: 59%;
-    padding: 1px;
-    margin-bottom: clamp(10px, 2vw, 15px);
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .title {

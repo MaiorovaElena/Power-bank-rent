@@ -9,23 +9,32 @@ const questions = [
   },
   {
     q: "What to do if you didn’t manage to return the power bank within the specified period?",
-    a: "eeee",
+    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
-  { q: "Are there season tickets or long term plans?", a: "eeee" },
+  {
+    q: "Are there season tickets or long term plans?",
+    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+  },
   {
     q: "How do you pay: by rental time or by the number of charges?",
-    a: "eeee",
+    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
     q: "What payment methods are accepted (cash, cards, mobile payments)?",
-    a: "eeee",
+    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
-  { q: "What is the capacity of power banks?", a: "eeee" },
+  {
+    q: "What is the capacity of power banks?",
+    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+  },
   {
     q: "Are power banks suitable for charging various devices (smartphones, tablets, laptops)?",
-    a: "eeee",
+    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
-  { q: "What to do if the power bank stops working or gets hot?", a: "eeee" },
+  {
+    q: "What to do if the power bank stops working or gets hot?",
+    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+  },
 ];
 
 export default function Faq({ faqRef }) {

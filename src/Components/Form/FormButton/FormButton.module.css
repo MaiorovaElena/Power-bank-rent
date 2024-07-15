@@ -11,6 +11,12 @@
   margin-bottom: 40px;
 }
 
+.button[disabled]:hover {
+  color: grey;
+  opacity: 50%;
+  background-color: rgb(49, 48, 48);
+}
+
 @media screen and (max-width: 990px) {
   .button {
     font-size: 22px;
@@ -24,5 +30,6 @@
     width: 60%;
     height: 10vw;
     font-size: 18px;
+    margin-bottom: 0px;
   }
 }

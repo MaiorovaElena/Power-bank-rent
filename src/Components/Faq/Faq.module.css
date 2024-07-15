@@ -7,7 +7,7 @@
 
 .title {
   font-family: var(--font-family);
-  font-size: 48px;
+  font-size: clamp(30px, 5vw, 48px);
   font-weight: 700;
   color: var(--white-color);
   text-align: center;
