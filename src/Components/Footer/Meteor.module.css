@@ -1,0 +1,33 @@
+@keyframes flyMeteor {
+  0% {
+    transform: translate(0, 0) rotate(-125deg);
+  }
+  100% {
+    transform: translate(calc(100vw + 250px), 250px) rotate(-125deg);
+  }
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-top: -150px;
+}
+
+.meteorContainer {
+  position: absolute;
+  top: 190px;
+  left: 0;
+}
+
+.meteor {
+  position: absolute;
+  top: -230px;
+  left: 0;
+}
+
+.meteorContainer.animate {
+  animation: flyMeteor 1.2s linear forwards;
+}

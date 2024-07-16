@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import st from "./InviteFriends.module.css";
 import AppButton from "../Common/Buttons/AppButton.jsx";
 import GoogleButton from "../Common/Buttons/GoogleButton.jsx";
-import useIntersectionObserver from "./hooks/useIntersectionObserver.jsx";
+import useIntersectionObserver from "../Common/hooks/useIntersectionObserver.jsx";
 import rightArrow from "../../assets/inviteFriends/right-arrow.svg";
 import leftArrow from "../../assets/inviteFriends/left-arrow.svg";
 
