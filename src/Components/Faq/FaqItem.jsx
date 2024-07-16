@@ -2,10 +2,12 @@ import styles from "./FaqItem.module.css";
 import arrowUp from "../../assets/faq/Arrow.svg";
 import arrowDown from "../../assets/faq/Arrowdown.svg";
 import { useRef, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 export default function FaqItem({ item, onClick, isOpen }) {
   const itemRef = useRef(null);
   const [arrowIcon, setArrowIcon] = useState(isOpen ? arrowUp : arrowDown);
+  const isMobile = useMediaQuery({ maxWidth: 599 });
 
   const toggleArrowIcon = () => {
     setArrowIcon(isOpen ? arrowDown : arrowUp);
@@ -21,7 +23,13 @@ export default function FaqItem({ item, onClick, isOpen }) {
         }}
       >
         {item.q}
-        <img src={arrowIcon} alt="arrow" className={styles.arrowIcon} />
+        <img
+          src={arrowIcon}
+          alt="Arrow"
+          className={
+            isOpen && isMobile ? styles.arrowIconMobile : styles.arrowIcon
+          }
+        />
       </button>
       <div
         className={styles.collapse}

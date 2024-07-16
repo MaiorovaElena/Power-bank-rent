@@ -8,7 +8,8 @@
   align-items: center;
   border: 2px solid var(--violet-color);
   border-radius: 20px;
-  height: clamp(450px, 55vw, 755px);
+  padding-bottom: 10px;
+  height: clamp(450px, 59vw, 740px);
   width: clamp(300px, 70vw, 960px);
 }
 
@@ -28,6 +29,7 @@
 @media screen and (max-width: 599px) {
   .container {
     width: 80vw;
-    height: 110vw;
+    height: 122vw;
+    padding-bottom: 0px;
   }
 }

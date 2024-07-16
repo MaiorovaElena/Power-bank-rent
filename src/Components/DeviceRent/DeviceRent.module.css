@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 12%;
+  /* margin-top: 120px; */
   max-width: 1400px;
   width: 100%;
   position: relative;
@@ -20,6 +21,9 @@
   margin-bottom: 90px;
 
   @media screen and (max-width: 380px) {
+    display: none;
+  }
+  @media screen and (max-width: 599px) {
     display: none;
   }
 }
@@ -66,17 +70,37 @@
   z-index: -1;
   overflow: hidden;
   transform: rotate(-15deg);
+  @media screen and (max-width: 380px) {
+    width: 75%;
+    margin-top: 25px;
+  }
+}
+
+.electricity {
+  width: 110%;
+  position: absolute;
+  top: 8%;
+  z-index: -1;
+  overflow: hidden;
+  transform: rotate(-15deg);
+
+  @media screen and (min-width: 600px) and (max-width: 1150px) {
+    top: 15%;
+  }
 
   @media screen and (max-width: 599px) {
     top: 200px;
-  }
+    @media screen and (max-width: 599px) {
+      top: -20%;
+    }
 
-  @media screen and (max-width: 500px) {
-    top: 270px;
-  }
+    @media screen and (max-width: 500px) {
+      top: 270px;
+    }
 
-  @media screen and (max-width: 380px) {
-    top: 60px;
-    transform: rotate(15deg);
+    @media screen and (max-width: 380px) {
+      top: 60px;
+      transform: rotate(15deg);
+    }
   }
 }

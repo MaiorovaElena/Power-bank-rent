@@ -2,8 +2,50 @@
 
 
 .reviews-info {
-    max-width: clamp(340px,40vw,560px);
+    max-width: clamp(260px, 40vw, 560px);
     width: 100%;
-    height: clamp(130px,20vw,330px);
+    height: clamp(130px, 20vw, 330px);
     overflow: hidden;
+
+}
+
+.reviews-info:nth-child(2n) {
+    margin-right: 14%;
+}
+
+.reviews-info:nth-child(2n+1) {
+    margin-left: 14%;
+}
+
+.reviews-info:nth-child(1),
+.reviews-info:nth-child(2) {
+    margin-top: 5%;
+}
+
+.reviews-info:nth-child(3),
+.reviews-info:nth-child(4) {
+    margin-bottom: 7%;
+    margin-top: 2%;
+}
+
+@media (max-width: 950px) {
+    .reviews-info:nth-child(2n) {
+        margin-right: 0%;
+    }
+
+    .reviews-info:nth-child(2n+1) {
+        margin-left: 0%;
+    }
+
+    .reviews-info:nth-child(1),
+    .reviews-info:nth-child(2) {
+        margin-top: 0%;
+    }
+
+    .reviews-info:nth-child(3),
+    .reviews-info:nth-child(4) {
+        margin-bottom: 0%;
+    }
+
+
 }

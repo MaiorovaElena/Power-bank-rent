@@ -22,7 +22,7 @@ export default function Meteor({ onAnimationEnd }) {
   }, [isAnimating, onAnimationEnd]);
 
   const elementRef = useIntersectionObserver(handleIntersection, {
-    threshold: 0.1,
+    threshold: 0.3,
   });
 
   return (

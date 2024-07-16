@@ -11,7 +11,7 @@ import Faq from "../Faq/Faq";
 import st from "./App.module.css";
 import { useTranslation } from "react-i18next";
 import Reviews from "../Reviews/Reviews";
-import DownloadOffer from "../DownloadOffer/DownloadOffer";
+// import DownloadOffer from "../DownloadOffer/DownloadOffer";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -36,6 +36,7 @@ function App() {
   const pricesScroll = () => scrollToRef(pricesRef);
   const faqScroll = () => scrollToRef(faqRef);
 
+
   return (
     <div className={st.container}>
       <Header
@@ -43,6 +44,7 @@ function App() {
         benefitsScroll={benefitsScroll}
         homeScroll={homeScroll}
         pricesScroll={pricesScroll}
+        faqScroll={faqScroll}
         changeLanguage={changeLanguage}
         t={t}
         i18n={i18n}
@@ -55,6 +57,7 @@ function App() {
       <InviteFriends />
       <Reviews />
       <Faq faqRef={faqRef} />
+      {/* <DownloadOffer /> */}
       <Footer
         benefitsScroll={benefitsScroll}
         howToRentScroll={howToRentScroll}
