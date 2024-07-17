@@ -19,6 +19,25 @@
   align-items: center;
 }
 
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-family);
+  font-size: clamp(20px, 3vw, 30px);
+  background-color: var(--violet-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  width: clamp(320px, 20vw, 800px);
+  height: clamp(110px, 25vw, 132px);
+  padding: clamp(14px, 4vw, 25px);
+  margin-bottom: 35px;
+}
+
 @media screen and (max-width: 1160px) {
   .container {
     height: 70%;
