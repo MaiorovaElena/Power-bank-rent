@@ -1,4 +1,4 @@
-.container {
+.prices {
   font-family: var(--font-family);
   color: var(--white-color);
   display: flex;
@@ -7,6 +7,10 @@
   align-items: center;
   width: 100%;
   margin-top: 50px;
+}
+
+.example {
+  scroll-margin-top: 200%;
 }
 
 .title {
