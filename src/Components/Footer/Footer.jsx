@@ -1,6 +1,6 @@
 import { useState } from "react";
 import st from "./Footer.module.css";
-import logo from "../../assets/footer/meteorLogo.svg";
+import logo from "../../assets/footer/logo-footer.png";
 import telegramIcon from "../../assets/footer/telegramIcon.png";
 import viberIcon from "../../assets/footer/viberIcon.png";
 
@@ -81,9 +81,7 @@ export default function Footer({
           </a>
         </div>
       </div>
-      <div className={st.logoMobileWrapper}>
-        <img className={st.logoMobile} src={logo} alt="logo" />
-      </div>
+      <img className={st.logoMobile} src={logo} alt="logo" />
     </footer>
   );
 }

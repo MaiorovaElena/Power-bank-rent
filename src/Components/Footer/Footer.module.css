@@ -91,7 +91,7 @@
   transform: scale(1.2);
 }
 
-.logoMobileWrapper {
+.logoMobile {
   display: none;
 }
 
@@ -155,31 +155,7 @@
     width: 80%;
   }
 
-  .logoMobileWrapper {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-  }
-
   .logoMobile {
     display: block;
-    position: relative;
-  }
-
-  .logoMobileWrapper::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    right: 40px;
-    width: 100%;
-    height: 50%;
-
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 30%,
-      rgba(0, 0, 0) 100%
-    );
-    pointer-events: none;
-    border-radius: 50%;
   }
 }
