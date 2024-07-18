@@ -10,6 +10,9 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: 380px) {
+    margin-top: 0;
+  }
 }
 
 .deviceTitle {
@@ -55,7 +58,6 @@
     width: 75%;
     margin-top: 25px;
   }
-
 }
 
 .electricity {

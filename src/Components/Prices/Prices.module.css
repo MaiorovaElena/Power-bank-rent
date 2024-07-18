@@ -52,7 +52,7 @@
   justify-content: space-between;
   width: 100%;
 
-  @media screen and (max-width:1224px) {
+  @media screen and (max-width: 1224px) {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -84,7 +84,7 @@
 .subscription:nth-child(1) {
   padding: 130px 0 165px 0;
 
-  @media screen and (max-width:1224px) {
+  @media screen and (max-width: 1224px) {
     display: none;
   }
 }
