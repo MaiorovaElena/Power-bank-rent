@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className={st.container}>
-      {/* <Header
+      <Header
         howToRentScroll={howToRentScroll}
         benefitsScroll={benefitsScroll}
         homeScroll={homeScroll}
@@ -55,7 +55,7 @@ function App() {
       <Prices pricesRef={pricesRef} />
       <InviteFriends />
       <Reviews />
-      <Faq faqRef={faqRef} /> */}
+      <Faq faqRef={faqRef} />
       {/* <DownloadOffer /> */}
       <Footer
         benefitsScroll={benefitsScroll}
