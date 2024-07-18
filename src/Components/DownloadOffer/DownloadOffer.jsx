@@ -6,16 +6,18 @@ import GoogleButton from "../Common/Buttons/GoogleButton";
 export default function DownloadOffer() {
   return (
     <div className={styles.container}>
-      <div className={styles.qr}>
-        <img className={styles.image} src={qrCode} alt="QRcode" />
-      </div>
-      <div className={styles.content}>
-        <h3 className={styles.title}>
-          Install the application and rent a power bank.
-        </h3>
-        <div className={styles.buttons}>
-          <GoogleButton />
-          <AppButton />
+      <div className={styles.downloadOfferContainer}>
+        <div className={styles.qr}>
+          <img className={styles.image} src={qrCode} alt="QRcode" />
+        </div>
+        <div className={styles.content}>
+          <h3 className={styles.title}>
+            Install the application and rent a power bank.
+          </h3>
+          <div className={styles.buttons}>
+            <GoogleButton/>
+            <AppButton />
+          </div>
         </div>
       </div>
     </div>
