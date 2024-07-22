@@ -7,6 +7,7 @@
 }
 
 .question {
+  font-family: var(--font-family);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,6 +24,7 @@
 }
 
 .questionOpened {
+  font-family: var(--font-family);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,6 +43,7 @@
 }
 
 .answer {
+  font-family: var(--font-family);
   font-size: 20px;
   color: var(--white-color);
   background-color: var(--violet-color);
@@ -65,11 +68,11 @@
 
 @media screen and (max-width: 990px) {
   .question {
-    height: 4.5em;
+    height: 5.5em;
   }
 
   .questionOpened {
-    height: 4.5em;
+    height: 5.5em;
   }
 
   .arrowIcon {
