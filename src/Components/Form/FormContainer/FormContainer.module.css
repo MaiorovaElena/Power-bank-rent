@@ -32,9 +32,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  width: clamp(320px, 20vw, 800px);
+  width: clamp(320px, 45vw, 800px);
   height: clamp(110px, 25vw, 132px);
-  padding: clamp(14px, 4vw, 25px);
+  padding: 70px;
   margin-bottom: 35px;
 }
 
@@ -43,6 +43,10 @@
     height: 70%;
     width: 78vw;
   }
+
+  .modal {
+    padding: 60px;
+  }
 }
 
 @media screen and (max-width: 599px) {
@@ -50,5 +54,11 @@
     width: 80vw;
     height: 122vw;
     padding-bottom: 0px;
+  }
+
+  .modal {
+    font-size: 18px;
+    width: clamp(200px, 20vw, 450px);
+    padding: 50px;
   }
 }
