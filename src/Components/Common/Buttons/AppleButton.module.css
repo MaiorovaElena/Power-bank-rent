@@ -8,6 +8,10 @@
   padding: 15px;
 }
 
+.button:hover {
+  opacity: 80%;
+}
+
 @media screen and (max-width: 599px) {
   .button {
     border: 1.5px solid var(--light-color);

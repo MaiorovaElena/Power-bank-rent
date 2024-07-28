@@ -13,12 +13,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-height: 919px;
+  max-height: 610px;
   margin-right: clamp(20px, 2vw, 30px);
 }
 
 .list {
-  font-size: clamp(16px, 2vw, 32px);
+  font-size: clamp(16px, 2vw, 28px);
+  font-weight: 500;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -28,6 +29,7 @@
   width: clamp(312px, 35vw, 459px);
   height: clamp(123px, 48vw, 258px);
   padding: 25px;
+  margin-bottom: 15px;
 }
 
 .image {

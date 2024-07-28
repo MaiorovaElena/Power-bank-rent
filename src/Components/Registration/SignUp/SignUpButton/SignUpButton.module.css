@@ -6,7 +6,7 @@
   color: var(--violet-color);
   font-family: var(--font-family);
   font-size: clamp(20px, 3vw, 32px);
-  font-weight: 600;
+  font-weight: 500;
   background-color: var(--black-color);
   border-radius: 40px;
   border: none;
@@ -15,6 +15,10 @@
   padding-right: clamp(5px, 1vw, 40px);
   width: clamp(136px, 75vw, 260px);
   height: clamp(50px, 10vw, 72px);
+}
+
+.button:hover {
+  opacity: 80%;
 }
 
 @media screen and (max-width: 599px) {

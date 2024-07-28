@@ -16,6 +16,7 @@
 .offer {
   font-size: clamp(16px, 4vw, 24px);
   padding: clamp(30px, 2vw, 70px);
+  font-weight: 500;
 }
 
 .modal {
@@ -23,6 +24,18 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    margin-top: clamp(230px, 1.5vw, 250px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin-top: clamp(170px, 1.5vw, 190px);
+  }
 }
 
 @media screen and (max-width: 599px) {
