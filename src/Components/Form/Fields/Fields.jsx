@@ -1,14 +1,10 @@
 import FormButton from "../FormButton/FormButton";
 import styles from "./Fields.module.css";
+import TermsAndConditions from "../TermsAndConditions/TermsAndConditions";
+import Modal from "react-modal";
 import { useState, useEffect } from "react";
 
-// import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
-// import TermsAndConditions from "../TermsAndConditions/TermsAndConditions";
-
 export default function Fields() {
-  // const [showModal, setShowModal] = useState(false);
-  // const [agreeToTerms, setAgreeToTerms] = useState(false);
-
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
@@ -21,6 +17,7 @@ export default function Fields() {
   const [emailError, setEmailError] = useState("Email can't be blank");
   const [fieldTouched, setFieldTouched] = useState(false);
   const [formValid, setFormValid] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
     if (nameError || telError || emailError || !checked) {
@@ -79,6 +76,16 @@ export default function Fields() {
     setFieldTouched(true);
     setChecked(!checked);
   };
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  const modalContent = <TermsAndConditions />;
 
   return (
     <>
@@ -145,10 +152,18 @@ export default function Fields() {
         />
         <label className={styles.terms} htmlFor="checkbox">
           By signing up you agree to our{" "}
-          <a className={styles.link} href="#">
+          <a className={styles.link} href="#" onClick={openModal}>
             Terms and conditions and Privacy policy
             <span className={styles.span}>*</span>
           </a>
+          <Modal
+            style={{ overlay: { zIndex: 100 } }}
+            className={styles.modal}
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+          >
+            {modalContent}
+          </Modal>
         </label>
       </div>
       <FormButton disabled={!formValid} />

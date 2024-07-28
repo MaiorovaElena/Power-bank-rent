@@ -1,4 +1,4 @@
-import Map from "../Map/Map";
+import Powerbank from "../Powerbank/Powerbank";
 import styles from "./Benefits.module.css";
 import IconMap from "../../../assets/benefits/IconMap.png";
 import IconMoney from "../../../assets/benefits/IconMoney.png";
@@ -24,7 +24,7 @@ export default function Benefits({ benefitsRef }) {
           Simple and fast rental service. The app is always at hand.{" "}
         </div>
       </div>
-      <Map />
+      <Powerbank />
     </div>
   );
 }
