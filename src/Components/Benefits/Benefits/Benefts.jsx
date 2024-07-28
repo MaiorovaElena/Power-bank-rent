@@ -1,4 +1,4 @@
-import Map from "../Map/Map";
+import Powerbank from "../Powerbank/Powerbank";
 import styles from "./Benefits.module.css";
 import IconMap from "../../../assets/benefits/IconMap.png";
 import IconMoney from "../../../assets/benefits/IconMoney.png";
@@ -22,7 +22,7 @@ export default function Benefits({ benefitsRef, i18n}) {
           {i18n.t("simple")}{" "}
         </div>
       </div>
-      <Map />
+      <Powerbank />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 .text {
   color: var(--white-color);
   font-family: var(--font-family);
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 800;
   text-align: left;
   padding-right: clamp(100px, 5vw, 170px);

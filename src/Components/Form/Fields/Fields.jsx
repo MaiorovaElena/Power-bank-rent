@@ -1,5 +1,7 @@
 import FormButton from "../FormButton/FormButton";
 import styles from "./Fields.module.css";
+import TermsAndConditions from "../TermsAndConditions/TermsAndConditions";
+import Modal from "react-modal";
 import { useState, useEffect } from "react";
 
 
@@ -17,6 +19,7 @@ export default function Fields({i18n}) {
   const [emailError, setEmailError] = useState("Email can't be blank");
   const [fieldTouched, setFieldTouched] = useState(false);
   const [formValid, setFormValid] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
     if (nameError || telError || emailError || !checked) {
@@ -75,6 +78,16 @@ export default function Fields({i18n}) {
     setFieldTouched(true);
     setChecked(!checked);
   };
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  const modalContent = <TermsAndConditions />;
 
   return (
     <>
@@ -145,6 +158,14 @@ export default function Fields({i18n}) {
           {i18n.t("terms")}
             <span className={styles.span}>*</span>
           </a>
+          <Modal
+            style={{ overlay: { zIndex: 100 } }}
+            className={styles.modal}
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+          >
+            {modalContent}
+          </Modal>
         </label>
       </div>
       <FormButton disabled={!formValid} i18n={i18n}/>
