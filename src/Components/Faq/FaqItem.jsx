@@ -4,7 +4,7 @@ import arrowDown from "../../assets/faq/Arrowdown.svg";
 import { useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
-export default function FaqItem({ item, onClick, isOpen }) {
+export default function FaqItem({ item, onClick, isOpen, i18n }) {
   const itemRef = useRef(null);
   const [arrowIcon, setArrowIcon] = useState(isOpen ? arrowUp : arrowDown);
   const isMobile = useMediaQuery({ maxWidth: 599 });
@@ -22,7 +22,7 @@ export default function FaqItem({ item, onClick, isOpen }) {
           toggleArrowIcon();
         }}
       >
-        {item.q}
+        {i18n.t(item.q)}
         <img
           src={arrowIcon}
           alt="Arrow"
@@ -38,7 +38,7 @@ export default function FaqItem({ item, onClick, isOpen }) {
         }
       >
         <div className={styles.answer} ref={itemRef}>
-          {item.a}
+        {i18n.t(item.a)}
         </div>
       </div>
     </li>

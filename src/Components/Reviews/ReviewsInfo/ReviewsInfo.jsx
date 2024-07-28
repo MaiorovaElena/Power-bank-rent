@@ -1,14 +1,12 @@
 import ReviewsBlok from '../ReviewsBlok/ReviewsBlok'
 import './ReviewsInfo.css'
-// import reviewsText from '../../../../reviews.json'
 
-export default function ReviewsInfo({ review }) {
+export default function ReviewsInfo({ review, i18n, t}) {
 
-  console.log(review)
   return (
 
     <div className='reviews-info'>
-      <ReviewsBlok review={review} />
+      <ReviewsBlok review={review} i18n={i18n} t={t}/>
     </div>
   )
 }

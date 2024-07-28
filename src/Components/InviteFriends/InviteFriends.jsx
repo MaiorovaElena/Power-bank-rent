@@ -6,7 +6,7 @@ import useIntersectionObserver from "./hooks/useIntersectionObserver.jsx";
 import rightArrow from "../../assets/inviteFriends/right-arrow.svg";
 import leftArrow from "../../assets/inviteFriends/left-arrow.svg";
 
-const InviteFriends = () => {
+const InviteFriends = ({i18n}) => {
   const [isVisible, setIsVisible] = useState(false);
   const [elementsVisible, setElementsVisible] = useState({
     paragraph1: false,
@@ -67,15 +67,14 @@ const InviteFriends = () => {
 
   return (
     <section className={st.container} ref={elementRef}>
-      <h3 className={st.title}>Invite friends</h3>
+      <h3 className={st.title}>{i18n.t("invite-friends")}</h3>
       <div className={st.textWrapper}>
         <p
           className={`${st.paragraph} ${
             elementsVisible.paragraph1 ? st.show : ""
           }`}
         >
-          <span className={st.violetText}>Send a link</span> to the app to a
-          friend
+          <span className={st.violetText}>{i18n.t("send-a-link")}</span> {i18n.t("a-friend")}
         </p>
         <img
           src={rightArrow}
@@ -89,8 +88,7 @@ const InviteFriends = () => {
             elementsVisible.paragraph2 ? st.show : ""
           }`}
         >
-          after <span className={st.violetText}>his renting it</span> for the
-          first time
+          {i18n.t("after")} <span className={st.violetText}>{i18n.t("his-renting-it")}</span> {i18n.t("first-time")}
         </p>
         <img
           src={leftArrow}
@@ -104,8 +102,8 @@ const InviteFriends = () => {
             elementsVisible.paragraph3 ? st.show : ""
           }`}
         >
-          receive a one-day rental as a{" "}
-          <span className={st.violetText}>gift</span>
+          {i18n.t("receive-one-day")}{" "}
+          <span className={st.violetText}>{i18n.t("gift")}</span>
         </p>
       </div>
       <div className={st.buttonWrapper}>

@@ -3,15 +3,13 @@
 .header {
   color: var(--white-color);
   border-radius: 0 0 40px 40px;
-  border: 4px solid rgba(145, 83, 223, 0.6);
   border-top-style: none;
-  background: #06000d;
-  max-height: 262px;
+  background-color: transparent;
   position: fixed;
-  max-width: 1400px;
   width: 100%;
   z-index: 3;
   overflow: hidden;
+  isolation: isolate;
 }
 
 .container {
@@ -21,16 +19,24 @@
 }
 
 .blokText {
-  width: 100%;
+  width: 90%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  margin-left: 7%;
 }
 
 .title {
   display: flex;
   cursor: pointer;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: rgba(29, 13, 44, 0.575);
+}
+
+.title:hover {
+  border: 2px solid var(--violet-color);
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.877);
 }
 
 .titleText {
@@ -39,6 +45,7 @@
   font-size: clamp(24px, 4vw, 48px);
   line-height: 44%;
   text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .menuLink {
@@ -46,50 +53,66 @@
   text-decoration: none;
 }
 
-.textList {
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+  width: 50%;
 }
 
-.menu {
-  max-width: 70%;
-  width: 100%;
-}
 
 .menuList {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style-type: none;
+  width: 100%;
 }
 
 .menuLi {
   font-family: var(--font-family);
-  font-size: clamp(16px, 2vw, 24px);
-  font-weight: 200;
+  font-size: clamp(16px, 2vw, 22px);
+  font-weight: 300;
   color: var(--white-color);
+  padding: 1%;
+  border-radius: 10px;
+  background-color: rgba(29, 13, 44, 0.575);
+  text-align: center;
+}
+
+.menuLi:hover {
+  border: 2px solid var(--violet-color);
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.877);
+  margin-left: 1%;
 }
 
 .language {
   display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: clamp(16px, 2vw, 24px);
   line-height: 87%;
+  width: 10%;
 }
+
+
 
 .slash {
   padding: 0 5% 0 5%;
 }
 
 .logo {
-  width: 30%;
+  width: 15%;
+  text-align: end;
 }
 
 .logoImg {
-  width: 100%;
+  width: 70%;
 }
 
 .active {
@@ -113,6 +136,17 @@
 
 .languageBlock {
   display: flex;
+
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(29, 13, 44, 0.575);
+  margin-left: 8%;
+}
+
+.languageBlock:hover {
+  border: 2px solid var(--violet-color);
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.877);
 }
 
 .langBtn {
@@ -123,38 +157,54 @@
   font-weight: 500;
   font-size: clamp(16px, 2vw, 24px);
   line-height: 87%;
+  cursor: pointer;
 }
+
 
 .slash {
   font-size: clamp(16px, 2vw, 24px);
   font-weight: bold;
 }
 
-@media screen and (max-width: 599px) {
-  .header {
-    height: 198px;
-  }
-
-  .container {
-    height: 100%;
-  }
+@media screen and (max-width: 799px) {
 
   .menu {
     display: none;
   }
 
-  .title {
-    order: 3;
+  .blokText {
+    display: flex;
+    flex-direction: column;
   }
 
-  .titleText {
-    text-align: end;
-    margin-left: 45%;
+  .title {
+    display: none;
+  }
+
+  .titleMob {
+    cursor: pointer;
+    padding: 6%;
+    border-radius: 10px;
+    background-color: rgba(29, 13, 44, 0.575);
+  }
+
+  .titleMob:hover {
+    border: 2px solid var(--violet-color);
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.877);
+  }
+
+  .btnOpen{
+    margin-left: 6%;
   }
 
   .mobileText {
     display: block;
     order: 2;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: rgba(29, 13, 44, 0.575);
+    margin-left: 10%;
   }
 
   .textPowerBank {
@@ -169,18 +219,28 @@
   }
 
   .open {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
   }
 
   .language {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
+  }
+
+  .languageBlock{
+    padding: 5px;
   }
 
   .logo {
-    width: 60%;
+    width: 40%;
+  }
+
+  .logoImg{
+    width: 100%;
   }
 
 }
