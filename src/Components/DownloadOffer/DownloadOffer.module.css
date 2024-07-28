@@ -5,10 +5,6 @@
   max-width: 1160px;
   width: 100%;
   background: radial-gradient(50% 50% at 50% 50%, rgb(145, 83, 223) 0%, rgb(0, 0, 0) 100%);
-  /* background-image: url("../../assets/offer/Gradient.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; */
   margin-bottom: 2%;
   height: 40vh;
 
@@ -70,7 +66,6 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 3%;
-    /* height: 15vh; */
     gap:13px;
   }
 }

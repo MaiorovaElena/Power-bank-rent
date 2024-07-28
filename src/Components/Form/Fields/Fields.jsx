@@ -2,12 +2,8 @@ import FormButton from "../FormButton/FormButton";
 import styles from "./Fields.module.css";
 import { useState, useEffect } from "react";
 
-// import { Link, Route, Switch, BrowserRouter as Router } from "react-router-dom";
-// import TermsAndConditions from "../TermsAndConditions/TermsAndConditions";
 
-export default function Fields() {
-  // const [showModal, setShowModal] = useState(false);
-  // const [agreeToTerms, setAgreeToTerms] = useState(false);
+export default function Fields({i18n}) {
 
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
@@ -93,7 +89,7 @@ export default function Fields() {
           onChange={(e) => nameHandler(e)}
           type="text"
           name="name"
-          placeholder="Name*"
+          placeholder={i18n.t("name")}
           value={name}
           required
         />
@@ -107,7 +103,7 @@ export default function Fields() {
           onChange={(e) => telHandler(e)}
           type="tel"
           name="tel"
-          placeholder="Phone*"
+          placeholder={i18n.t("phone")}
           value={tel}
           required
         />
@@ -123,7 +119,7 @@ export default function Fields() {
           onChange={(e) => emailHandler(e)}
           type="email"
           name="email"
-          placeholder="Email*"
+          placeholder={i18n.t("email")}
           value={email}
           required
         />
@@ -131,7 +127,7 @@ export default function Fields() {
       <div className={styles.checkboxContainer}>
         {!checked && fieldTouched && (
           <div className={styles.error}>
-            Please confirm agreement to terms and conditions
+            {i18n.t("confirm-agreement")}
           </div>
         )}
         <input
@@ -144,14 +140,14 @@ export default function Fields() {
           required
         />
         <label className={styles.terms} htmlFor="checkbox">
-          By signing up you agree to our{" "}
+        {i18n.t("by-signing-up")}{" "}
           <a className={styles.link} href="#">
-            Terms and conditions and Privacy policy
+          {i18n.t("terms")}
             <span className={styles.span}>*</span>
           </a>
         </label>
       </div>
-      <FormButton disabled={!formValid} />
+      <FormButton disabled={!formValid} i18n={i18n}/>
     </>
   );
 }

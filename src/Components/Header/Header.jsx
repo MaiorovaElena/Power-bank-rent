@@ -58,20 +58,17 @@ export default function Header({ howToRentScroll, benefitsScroll, homeScroll, pr
             <h1 className={st.titleText}>Meteor</h1>
           </div>
           <div className={st.mobileText}>
-            <p className={st.textPowerBank}>Rent a <span className={st.span}>power bank</span> for the price of a cup of coffee.</p>
+            <p className={st.textPowerBank}>{t("rentA")}<span className={st.span}>{t("powerBank")}</span> {t("cup-of-coffee")}</p>
           </div>
-          {/* <div className={st.textList}> */}
           <nav className={st.menu}>
             <ul className={st.menuList}>
               <li className={st.menuLi} onClick={benefitsScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("benefits")}</a></li>
               <li className={st.menuLi} onClick={howToRentScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("howToRent")}</a></li>
               <li className={st.menuLi} onClick={pricesScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("price")}</a></li>
-              <li className={st.menuLi} onClick={faqScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>faq</a></li>
+              <li className={st.menuLi} onClick={faqScroll}><a href="" className={`${st.menuLink} ${classActiveMenu === 1 ? st.active : ''}`} onClick={clickMenuList}>{t("faq")}</a></li>
             </ul>
           </nav>
 
-
-          {/* </div> */}
 
           <div className={st.language}>
             <div className={st.open}>

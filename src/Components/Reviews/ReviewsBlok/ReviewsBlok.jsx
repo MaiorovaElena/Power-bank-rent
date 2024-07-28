@@ -1,6 +1,6 @@
 import './ReviewsBlok.css'
 
-export default function ReviewsBlok({ review }) {
+export default function ReviewsBlok({ review, i18n, t}) {
 
 
     const { name, text, data, image } = review;
@@ -12,7 +12,7 @@ export default function ReviewsBlok({ review }) {
             </div>
             <div className='reviews-blok-info'>
                 <h3 className='reviews-blok-name'>{name}</h3>
-                <p className='reviews-blok-text'>"{text}"</p>
+                <p className='reviews-blok-text'>"{t(text)}"</p>
                 <p className='reviews-blok-data'>{data}</p>
             </div>
         </div>

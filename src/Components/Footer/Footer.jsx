@@ -9,6 +9,7 @@ export default function Footer({
   benefitsScroll,
   pricesScroll,
   faqScroll,
+  i18n
 }) {
   const [classActiveMenu, setClassActiveMenu] = useState(null);
 
@@ -33,22 +34,22 @@ export default function Footer({
         <ul className={st.navList}>
           <li className={st.navItem} onClick={benefitsScroll}>
             <a href="" className={st.navLink} onClick={clickMenuList}>
-              {"benefits"}
+            {i18n.t("benefits")}
             </a>
           </li>
           <li className={st.navItem} onClick={howToRentScroll}>
             <a href="" className={st.navLink} onClick={clickMenuList}>
-              {"how to rent"}
+            {i18n.t("howToRent")}
             </a>
           </li>
           <li className={st.navItem} onClick={pricesScroll}>
             <a href="" className={st.navLink} onClick={clickMenuList}>
-              {"price"}
+            {i18n.t("price")}
             </a>
           </li>
           <li className={st.navItem} onClick={faqScroll}>
             <a href="" className={st.navLink} onClick={clickMenuList}>
-              {"faq"}
+            {i18n.t("faq")}
             </a>
           </li>
         </ul>

@@ -3,12 +3,9 @@
 .header {
   color: var(--white-color);
   border-radius: 0 0 40px 40px;
-  /* border: 4px solid rgba(145, 83, 223, 0.6); */
   border-top-style: none;
   background-color: transparent;
-  /* max-height: 131px; */
   position: fixed;
-  /* max-width: 1400px; */
   width: 100%;
   z-index: 3;
   overflow: hidden;
@@ -26,9 +23,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* flex-direction: column;
-  justify-content: space-around; */
-  /* margin-left: 7%; */
 }
 
 .title {
@@ -67,17 +61,12 @@
   width: 50%;
 }
 
-/* .menu {
-  max-width: 70%;
-  width: 100%;
-} */
 
 .menuList {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  /* gap: 2%; */
   width: 100%;
 }
 
@@ -86,7 +75,7 @@
   font-size: clamp(16px, 2vw, 22px);
   font-weight: 300;
   color: var(--white-color);
-  padding: 2%;
+  padding: 1%;
   border-radius: 10px;
   background-color: rgba(29, 13, 44, 0.575);
   text-align: center;
@@ -96,6 +85,7 @@
   border: 2px solid var(--violet-color);
   transform: scale(1.1);
   background-color: rgba(0, 0, 0, 0.877);
+  margin-left: 1%;
 }
 
 .language {
@@ -150,7 +140,7 @@
   padding: 15px;
   border-radius: 10px;
   background-color: rgba(29, 13, 44, 0.575);
-  margin-left: 5%;
+  margin-left: 8%;
 }
 
 .languageBlock:hover {
@@ -170,20 +160,6 @@
   cursor: pointer;
 }
 
-/* 
-.languageEn {
-  padding: 5%;
-  border-radius: 10px;
-  background-color: rgba(29, 13, 44, 0.575);
-}
-
-
-
-.languageEn:hover {
-  border: 2px solid var(--violet-color);
-    transform: scale(1.1);
-    background-color: rgba(0, 0, 0, 0.877);
-} */
 
 .slash {
   font-size: clamp(16px, 2vw, 24px);
@@ -191,13 +167,6 @@
 }
 
 @media screen and (max-width: 799px) {
-  .header {
-    /* height: 198px; */
-  }
-
-  .container {
-    /* height: 100%; */
-  }
 
   .menu {
     display: none;
@@ -213,7 +182,6 @@
   }
 
   .titleMob {
-    /* display: flex; */
     cursor: pointer;
     padding: 6%;
     border-radius: 10px;
@@ -224,11 +192,6 @@
     border: 2px solid var(--violet-color);
     transform: scale(1.1);
     background-color: rgba(0, 0, 0, 0.877);
-  }
-
-  .titleText {
-    /* text-align: end; */
-    /* margin-left: 45%; */
   }
 
   .btnOpen{

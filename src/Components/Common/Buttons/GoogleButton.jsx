@@ -1,7 +1,7 @@
 import { GooglePlayButton } from "react-mobile-app-button";
 import styles from "./GoogleButton.module.css";
 
-export default function GoogleButton() {
+export default function GoogleButton({i18n}) {
   const link = "https://play.google.com/store/apps";
   const title = "Download in the";
   const theme = "dark";

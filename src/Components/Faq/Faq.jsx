@@ -4,44 +4,44 @@ import FaqItem from "./FaqItem";
 
 const questions = [
   {
-    q: "How to rent a power bank?",
-    a: "You can arrange a rental through our mobile application. Simply register, select your nearest rental station and follow the on-screen instructions.",
+    q: "how-to-rent",
+    a: "you-can",
   },
   {
-    q: "What to do if you didn’t manage to return the power bank within the specified period?",
+    q: "what-specified-period",
     a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
-    q: "Are there season tickets or long term plans?",
+    q: "what-plans",
     a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
-    q: "How do you pay: by rental time or by the number of charges?",
+    q: "what-charges",
     a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
-    q: "What payment methods are accepted (cash, cards, mobile payments)?",
+    q: "what-payments",
     a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
-    q: "What is the capacity of power banks?",
+    q: "what-banks",
     a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
-    q: "Are power banks suitable for charging various devices (smartphones, tablets, laptops)?",
+    q: "what-devices",
     a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
   {
-    q: "What to do if the power bank stops working or gets hot?",
+    q: "what-gets-hot",
     a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
   },
 ];
 
-export default function Faq({ faqRef }) {
+export default function Faq({ faqRef, i18n={i18n} }) {
   const [openId, setId] = useState(null);
 
   return (
-    <div ref={faqRef}>
+    <div ref={faqRef} className={styles.faqBlock}>
       <h3 className={styles.title}>FAQ</h3>
       <div className={styles.container}>
         <ul className={styles.faq}>
@@ -52,6 +52,7 @@ export default function Faq({ faqRef }) {
                 item={item}
                 isOpen={id === openId}
                 key={id}
+                i18n={i18n}
               />
             );
           })}

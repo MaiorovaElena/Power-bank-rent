@@ -49,19 +49,20 @@ function App() {
         i18n={i18n}
       />
       <RegistrationSection homeRef={homeRef} t={t} i18n={i18n} />
-      <Benefits benefitsRef={benefitsRef} />
-      <DeviceRent />
-      <HowToRent howToRentRef={howToRentRef} />
-      <Prices pricesRef={pricesRef} />
-      <InviteFriends />
-      <Reviews />
-      <Faq faqRef={faqRef} />
-      <DownloadOffer />
+      <Benefits benefitsRef={benefitsRef} i18n={i18n}/>
+      <DeviceRent i18n={i18n}/>
+      <HowToRent howToRentRef={howToRentRef} i18n={i18n}/>
+      <Prices pricesRef={pricesRef} i18n={i18n}/>
+      <InviteFriends i18n={i18n}/>
+      <Reviews i18n={i18n}/>
+      <Faq faqRef={faqRef} i18n={i18n}/>
+      <DownloadOffer i18n={i18n}/>
       <Footer
         benefitsScroll={benefitsScroll}
         howToRentScroll={howToRentScroll}
         pricesScroll={pricesScroll}
         faqScroll={faqScroll}
+        i18n={i18n}
       />
     </div>
   );
