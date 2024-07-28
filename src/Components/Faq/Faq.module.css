@@ -1,5 +1,6 @@
 .faqBlock {
   margin-top: 8%;
+
 }
 
 .container {
@@ -24,4 +25,10 @@
   width: 100%;
   padding: 0 clamp(35px, 9vw, 120px);
   margin-bottom: clamp(60px, 3vw, 62px);
+}
+
+@media (max-width: 950px) {
+  .faqBlock {
+    margin-top: 20%;
+  }
 }
