@@ -15,7 +15,7 @@ export default function BurgerMenu({ openMobileMenu, closeMenu, howToRentScroll,
                 <li className={st.menuLi}><button className={st.menuLink} onClick={benefitsScroll}>{i18n.t("benefits")}</button></li>
                 <li className={st.menuLi}><button className={st.menuLink} onClick={howToRentScroll}>{i18n.t("howToRent")}</button></li>
                 <li className={st.menuLi}><button className={st.menuLink} onClick={pricesScroll}>{i18n.t("price")}</button></li>
-                <li className={st.menuLi} ><button className={st.menuLink} onClick={faqScroll}>faq</button></li>
+                <li className={st.menuLi} ><button className={st.menuLink} onClick={faqScroll}>{i18n.t("faq")}</button></li>
               </ul>
         </nav>
     </div>
