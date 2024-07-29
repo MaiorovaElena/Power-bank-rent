@@ -4,7 +4,7 @@ import TermsAndConditions from "../TermsAndConditions/TermsAndConditions";
 import Modal from "react-modal";
 import { useState, useEffect } from "react";
 
-export default function Fields() {
+export default function Fields({ i18n }) {
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
@@ -100,7 +100,7 @@ export default function Fields() {
           onChange={(e) => nameHandler(e)}
           type="text"
           name="name"
-          placeholder="Name*"
+          placeholder={i18n.t("name")}
           value={name}
           required
         />
@@ -114,7 +114,7 @@ export default function Fields() {
           onChange={(e) => telHandler(e)}
           type="tel"
           name="tel"
-          placeholder="Phone*"
+          placeholder={i18n.t("phone")}
           value={tel}
           required
         />
@@ -130,16 +130,14 @@ export default function Fields() {
           onChange={(e) => emailHandler(e)}
           type="email"
           name="email"
-          placeholder="Email*"
+          placeholder={i18n.t("email")}
           value={email}
           required
         />
       </div>
       <div className={styles.checkboxContainer}>
         {!checked && fieldTouched && (
-          <div className={styles.error}>
-            Please confirm agreement to terms and conditions
-          </div>
+          <div className={styles.error}>{i18n.t("confirm-agreement")}</div>
         )}
         <input
           className={styles.checkbox}
@@ -151,9 +149,9 @@ export default function Fields() {
           required
         />
         <label className={styles.terms} htmlFor="checkbox">
-          By signing up you agree to our{" "}
+          {i18n.t("by-signing-up")}{" "}
           <button className={styles.button} onClick={openModal}>
-            Terms and conditions and Privacy policy
+            {i18n.t("terms")}
             <span className={styles.span}>*</span>
           </button>
           <Modal
@@ -166,7 +164,7 @@ export default function Fields() {
           </Modal>
         </label>
       </div>
-      <FormButton disabled={!formValid} />
+      <FormButton disabled={!formValid} i18n={i18n} />
     </>
   );
 }

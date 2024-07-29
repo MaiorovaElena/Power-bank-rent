@@ -4,30 +4,35 @@
     background-image: url(../../assets/reviews/backg.svg);
     background-position: center;
     height: 78vh;
-    margin-top: 5%;
+    margin-top: 10%;
     background-size: auto 78vh;
 
-    @media (max-width: 375px) {
+    @media (max-width: 950px){
         height: 100vh;
         background-size: auto 100vh;
     }
+
+    @media (max-width: 400px) {
+        margin-top: 20%;
+    }
 }
 
-.mySwiper {
-    margin-top: 4%;
-}
 
 .swiper {
     width: clamp(360px, 95vw,1440px);
-    height: 70vh;
+    height: 90vmin;
+
+    @media (max-width: 950px) {
+        height: 130vh;
+    }
+
 
     @media (max-width: 400px){
-        height: 73vh;
+        height: 100vh;
     }
 
     @media (max-width: 375px) {
-        /* height: 80vh; */
-        height: 100vh;
+        height: 100vmax;
     }
 }
 
@@ -55,6 +60,6 @@
         gap: 2%;
         justify-content: center;
         height: 90%;
-        margin-top: 10%;
+        /* margin-top: 10%; */
     }
 }

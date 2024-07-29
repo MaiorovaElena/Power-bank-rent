@@ -1,14 +1,13 @@
 import st from "./DeviceRent.module.css";
 import electricity from "../../assets/rent/electricity.gif";
-// import device from '../../assets/rent/rent-img.png';
 import deviceImg from "../../assets/rent/rentImg.png";
 
-export default function DeviceRent() {
+export default function DeviceRent({i18n}) {
   return (
     <div className={st.device}>
       <div className={st.deviceTitle}>
-        <h2 className={st.titleLight}>Is your phone dying?</h2>
-        <h2 className={st.titleViolet}>Take the power bank!</h2>
+        <h2 className={st.titleLight}>{i18n.t("phone-dying")}</h2>
+        <h2 className={st.titleViolet}>{i18n.t("take-the-power")}</h2>
       </div>
       <div className={st.images}>
         <img src={deviceImg} className={st.deviceImg} alt="device rent" />

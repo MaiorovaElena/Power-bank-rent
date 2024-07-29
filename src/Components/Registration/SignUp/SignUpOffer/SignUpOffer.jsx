@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Modal from "react-modal";
 import FormContainer from "../../../Form/FormContainer/FormContainer";
 
-export default function SignUpOffer({ t, i18n }) {
+export default function SignUpOffer({ t, i18n={i18n} }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -19,7 +19,7 @@ export default function SignUpOffer({ t, i18n }) {
     document.body.style.overflow = modalIsOpen ? "hidden" : "unset";
   }, [modalIsOpen]);
 
-  const modalContent = <FormContainer />;
+  const modalContent = <FormContainer i18n={i18n}/>;
 
   return (
     <div className={styles.container}>

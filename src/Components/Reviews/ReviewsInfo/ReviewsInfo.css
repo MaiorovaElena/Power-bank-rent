@@ -40,12 +40,61 @@
     .reviews-info:nth-child(1),
     .reviews-info:nth-child(2) {
         margin-top: 0%;
+        /* margin-bottom: -30%; */
     }
 
     .reviews-info:nth-child(3),
     .reviews-info:nth-child(4) {
         margin-bottom: 0%;
+        margin-top: -10%;
+    }
+
+    .reviews-info:nth-child(1){
+        margin-bottom: -10%;
     }
 
 
+
+}
+
+@media (max-width: 750px) {
+
+    .reviews-info:nth-child(1){
+        margin-bottom: -30%;
+    }
+
+    .reviews-info:nth-child(2){
+        margin-bottom: -4%;
+    }
+
+    .reviews-info:nth-child(3),
+    .reviews-info:nth-child(4) {
+        margin-bottom: 0%;
+        margin-top: -20%;
+    }
+
+    .reviews-info:nth-child(4){
+        margin-top: -30%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .reviews-info:nth-child(1){
+        margin-bottom: 0%;
+    }
+
+    .reviews-info:nth-child(2){
+        margin-bottom: 0%;
+    }
+
+    .reviews-info:nth-child(3),
+    .reviews-info:nth-child(4) {
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+
+    .reviews-info:nth-child(4){
+        margin-top: 0%;
+    }
 }

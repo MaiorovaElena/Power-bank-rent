@@ -1,12 +1,10 @@
 @import '../../style/_template.css';
 
 .container{
-    /* border: 4px solid red; границы общего контейнера */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1440px;
     width: 100%;
-    /* height: 100svh; */
 }
