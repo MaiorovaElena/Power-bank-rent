@@ -152,10 +152,10 @@ export default function Fields() {
         />
         <label className={styles.terms} htmlFor="checkbox">
           By signing up you agree to our{" "}
-          <a className={styles.link} href="#" onClick={openModal}>
+          <button className={styles.button} onClick={openModal}>
             Terms and conditions and Privacy policy
             <span className={styles.span}>*</span>
-          </a>
+          </button>
           <Modal
             style={{ overlay: { zIndex: 100 } }}
             className={styles.modal}
