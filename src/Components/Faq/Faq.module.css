@@ -16,6 +16,7 @@
   font-weight: 700;
   color: var(--white-color);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .faq {

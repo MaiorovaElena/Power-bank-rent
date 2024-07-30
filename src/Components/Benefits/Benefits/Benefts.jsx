@@ -8,7 +8,7 @@ export default function Benefits({ benefitsRef, i18n}) {
   return (
     <div className={styles.container} ref={benefitsRef}>
       <div className={styles.benefits}>
-        <h3 className={styles.title}>In the right place at the right time</h3>
+        <h3 className={styles.title}>{i18n.t("in-the-right")}</h3>
         <div className={styles.list}>
           <img className={styles.image} src={IconMap} alt="Map" />
           {i18n.t("rental-stations")}
