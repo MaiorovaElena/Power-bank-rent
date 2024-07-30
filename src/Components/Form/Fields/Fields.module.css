@@ -39,8 +39,16 @@ input[type="checkbox"] + label {
   cursor: pointer;
 }
 
-.link {
+.button {
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: clamp(18px, 2vw, 24px);
+  text-decoration: underline;
   color: var(--white-color);
+  background-color: var(--black-color);
+  border: none;
+  text-align: left;
 }
 
 .span {
@@ -99,6 +107,10 @@ input[type="checkbox"] + label {
     width: 70vw;
     margin-top: 0px;
     margin-bottom: 60px;
+  }
+
+  .button {
+    font-size: 12px;
   }
 
   .terms {
