@@ -4,7 +4,7 @@ import Fields from "../Fields/Fields";
 import Modal from "react-modal";
 import { useState } from "react";
 
-export default function FormContainer({i18n}) {
+export default function FormContainer({ i18n }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const handleSubmit = () => {
@@ -19,23 +19,19 @@ export default function FormContainer({i18n}) {
     setModalIsOpen(false);
   };
 
-  const modalContent = (
-    <div>
-      {i18n.t("website-prototype")}
-    </div>
-  );
+  const modalContent = <div>{i18n.t("website-prototype")}</div>;
 
   return (
     <div className={styles.container}>
-      <Title i18n={i18n}/>
+      <Title i18n={i18n} />
 
       <form
         className={styles.form}
-        action="https://api.form-data.com/f/rreze912qmcz88kgurxwn"
+        action="https://api.form-data.com/f/zx3lo8j7ypop4qwuxr52cb"
         method="POST"
         onSubmit={handleSubmit}
       >
-        <Fields i18n={i18n}/>
+        <Fields i18n={i18n} />
       </form>
       <Modal
         className={styles.modal}
