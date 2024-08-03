@@ -55,7 +55,7 @@
   align-items: center;
   padding-top: clamp(10px, 4vw, 70px);
   gap: 70px;
-  margin-bottom: 127px;
+  margin-bottom: 2%;
 }
 
 .rightArrow {
