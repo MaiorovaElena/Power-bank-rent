@@ -4,9 +4,7 @@ import TermsAndConditions from "../TermsAndConditions/TermsAndConditions";
 import Modal from "react-modal";
 import { useState, useEffect } from "react";
 
-
-export default function Fields({i18n}) {
-
+export default function Fields({ i18n }) {
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
@@ -139,9 +137,7 @@ export default function Fields({i18n}) {
       </div>
       <div className={styles.checkboxContainer}>
         {!checked && fieldTouched && (
-          <div className={styles.error}>
-            {i18n.t("confirm-agreement")}
-          </div>
+          <div className={styles.error}>{i18n.t("confirm-agreement")}</div>
         )}
         <input
           className={styles.checkbox}
@@ -153,11 +149,11 @@ export default function Fields({i18n}) {
           required
         />
         <label className={styles.terms} htmlFor="checkbox">
-        {i18n.t("by-signing-up")}{" "}
-          <a className={styles.link} href="#">
-          {i18n.t("terms")}
+          {i18n.t("by-signing-up")}{" "}
+          <button className={styles.button} onClick={openModal}>
+            {i18n.t("terms")}
             <span className={styles.span}>*</span>
-          </a>
+          </button>
           <Modal
             style={{ overlay: { zIndex: 100 } }}
             className={styles.modal}
@@ -168,7 +164,7 @@ export default function Fields({i18n}) {
           </Modal>
         </label>
       </div>
-      <FormButton disabled={!formValid} i18n={i18n}/>
+      <FormButton disabled={!formValid} i18n={i18n} />
     </>
   );
 }
