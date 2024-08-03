@@ -7,7 +7,7 @@
     height: clamp(130px, 20vw, 330px);
     overflow: hidden;
 
-    @media (max-width: 860px) and (max-height: 838px) and (min-height: 739px) {
+    @media (max-width: 860px) and (max-height: 838px) and (min-height: 600px) {
         height: 20vh;
     }
 
@@ -114,6 +114,18 @@
 
     .reviews-info:nth-child(4){
         margin-top: -30%;
+    }
+}
+
+@media (max-height: 600px) {
+    .reviews-info:nth-child(1),
+    .reviews-info:nth-child(2) {
+        margin-top: 25%;
+    }
+
+    .reviews-info:nth-child(3),
+    .reviews-info:nth-child(4) {
+        margin-top: -15%;
     }
 }
 
