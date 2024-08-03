@@ -22,6 +22,7 @@
     width: clamp(360px, 95vw,1440px);
     height: 90vmin;
 
+
     @media (max-width: 950px) {
         height: 130vh;
     }
@@ -60,6 +61,5 @@
         gap: 2%;
         justify-content: center;
         height: 90%;
-        /* margin-top: 10%; */
     }
 }

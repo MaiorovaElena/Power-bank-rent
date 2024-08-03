@@ -37,12 +37,12 @@ const questions = [
   },
 ];
 
-export default function Faq({ faqRef, i18n={i18n} }) {
+export default function Faq({ faqRef, i18n }) {
   const [openId, setId] = useState(null);
 
   return (
     <div ref={faqRef} className={styles.faqBlock}>
-      <h3 className={styles.title}>FAQ</h3>
+      <h3 className={styles.title}>{i18n.t("faq")}</h3>
       <div className={styles.container}>
         <ul className={styles.faq}>
           {questions.map((item, id) => {

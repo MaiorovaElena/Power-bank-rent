@@ -7,6 +7,10 @@
     padding: 0;
     margin: 0;
     scroll-margin-top: 130px;
+
+    @media (max-width: 440px) {
+        scroll-margin-top: 90px;
+    }
 }
 
 body {
