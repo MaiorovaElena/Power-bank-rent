@@ -62,25 +62,22 @@
 .electricity {
   width: 110%;
   position: absolute;
-  /* top: 2%; */
+  top: -3%;
   z-index: -1;
   overflow: hidden;
   transform: rotate(-15deg);
 
   @media screen and (min-width: 600px) and (max-width: 1150px) {
-    top: 15%;
+    top: 10%;
   }
 
   @media screen and (max-width: 599px) {
-    top: -20%;
+    top: -30%;
   }
 
-  @media screen and (max-width: 500px) {
-    top: 270px;
-  }
 
   @media screen and (min-width: 381px) and (max-width: 499px) {
-    top: -10%;
+    top: -20%;
   }
 
   @media screen and (max-width: 380px) {
