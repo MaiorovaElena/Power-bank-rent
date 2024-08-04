@@ -17,7 +17,7 @@ const Prices = ({ pricesRef, i18n }) => {
             <p className={st.term}>{i18n.t("weekly")}</p>
             <div className={st.divider}></div>
             <p className={st.price}>
-              <span>1428</span> {i18n.t("rsd")}
+              <span>1190</span> {i18n.t("rsd")}
               <br />
               {i18n.t("per-week")}
             </p>
@@ -27,7 +27,7 @@ const Prices = ({ pricesRef, i18n }) => {
             <p className={st.term}>{i18n.t("monthly")}</p>
             <div className={st.divider}></div>
             <p className={st.price}>
-              <span>5040</span> {i18n.t("rsd")}
+              <span>4200</span> {i18n.t("rsd")}
               <br />
               {i18n.t("per-month")}
             </p>
