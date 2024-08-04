@@ -1,0 +1,30 @@
+.title {
+  font-family: var(--font-family);
+  font-size: 28px;
+  padding-bottom: 25px;
+}
+
+.text {
+  font-family: var(--font-family);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+}

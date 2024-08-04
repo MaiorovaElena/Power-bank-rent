@@ -1,0 +1,123 @@
+.listItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: clamp(5px, 2.5vw, 12px);
+  background-color: var(--violet-color);
+  border-radius: 12px;
+}
+
+.question {
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(21px, 4vw, 28px);
+  text-align: left;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  cursor: pointer;
+  border-radius: 12px;
+  border: 2.5px solid var(--violet-color);
+  height: 4em;
+  padding: 0px 45px 0px 45px;
+  transition-delay: 0.2s;
+}
+
+.questionOpened {
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(21px, 4vw, 28px);
+  color: var(--white-color);
+  text-align: left;
+  background-color: var(--violet-color);
+  cursor: pointer;
+  border: var(--violet-color);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 4em;
+  padding: 0px 45px 0px 45px;
+}
+
+.answer {
+  font-family: var(--font-family);
+  font-size: 20px;
+  color: var(--white-color);
+  background-color: var(--violet-color);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 2px 45px 50px 45px;
+  transition-delay: 0.5s;
+}
+
+.collapse {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+
+.arrowIcon {
+  width: 40px;
+  height: 15px;
+  padding-left: 20px;
+  transition: transform 0.3s;
+}
+
+@media screen and (max-width: 990px) {
+  .question {
+    height: 5.5em;
+  }
+
+  .questionOpened {
+    height: 5.5em;
+  }
+
+  .arrowIcon {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .question {
+    font-size: 20px;
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+    padding: 15px 19px 19px 10px;
+  }
+
+  .questionOpened {
+    position: relative;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+    padding: 15px 19px 19px 10px;
+  }
+
+  .answer {
+    font-size: 14px;
+    text-align: right;
+    padding: 0px 19px 30px 10px;
+  }
+
+  .arrowIcon {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+
+  .arrowIconMobile {
+    position: relative;
+    opacity: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20px;
+    padding-left: 0px;
+  }
+}

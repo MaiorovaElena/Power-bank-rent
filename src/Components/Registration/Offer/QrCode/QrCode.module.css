@@ -1,0 +1,16 @@
+.image {
+  max-height: clamp(120px, 15vw, 180px);
+  width: auto;
+}
+
+@media screen and (max-width: 990px) {
+  .image {
+    max-height: 110px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .image {
+    display: none;
+  }
+}

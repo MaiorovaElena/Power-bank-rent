@@ -1,8 +1,9 @@
-export default function OfferText() {
+import styles from "./OfferText.module.css";
+
+export default function OfferText({ i18n}) {
   return (
-    <p>
-      Rent a power bank for the price of a cup of coffee. In the right place at
-      the right time
-    </p>
+    <h2 className={styles.text}>
+      {i18n.t("rent-a-power")}
+    </h2>
   );
 }

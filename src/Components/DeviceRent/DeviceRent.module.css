@@ -1,0 +1,87 @@
+.device {
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12%;
+  max-width: 1400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 380px) {
+    margin-top: 0;
+  }
+}
+
+.deviceTitle {
+  width: 86%;
+  font-weight: 800;
+  margin-bottom: 8%;
+
+  @media screen and (max-width: 599px) {
+    display: none;
+  }
+}
+
+.titleLight {
+  color: var(--white-color);
+  text-align: start;
+  font-weight: 800;
+  font-size: clamp(40px, 7vw, 64px);
+  margin-bottom: 45px;
+  padding-left: 20px;
+}
+
+.titleViolet {
+  color: var(--violet-color);
+  text-align: end;
+  font-size: clamp(40px, 7vw, 64px);
+  padding-right: 20px;
+  letter-spacing: 1px;
+}
+
+.images {
+  margin-bottom: clamp(84px, 3vw, 232px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.deviceImg {
+  z-index: 2;
+  width: 40%;
+
+  @media screen and (max-width: 380px) {
+    width: 65%;
+    margin-top: 30%;
+  }
+}
+
+.electricity {
+  width: 110%;
+  position: absolute;
+  top: -3%;
+  z-index: -1;
+  overflow: hidden;
+  transform: rotate(-15deg);
+
+  @media screen and (min-width: 600px) and (max-width: 1150px) {
+    top: 10%;
+  }
+
+  @media screen and (max-width: 599px) {
+    top: -30%;
+  }
+
+
+  @media screen and (min-width: 381px) and (max-width: 499px) {
+    top: -20%;
+  }
+
+  @media screen and (max-width: 380px) {
+    top: 160px;
+    transform: rotate(15deg);
+  }
+}

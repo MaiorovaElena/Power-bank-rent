@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  margin-top: 5%;
+}
+
+.image {
+  object-fit: contain;
+  max-height: 500px;
+  width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .image {
+    max-width: clamp(250px, 5vw, 290px);
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    display: none;
+  }
+}

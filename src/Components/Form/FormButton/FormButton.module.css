@@ -1,0 +1,39 @@
+.button {
+  font-size: clamp(20px, 2vw, 32px);
+  font-weight: 600;
+  background-color: var(--violet-color);
+  color: var(--black-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  height: clamp(45px, 5vw, 60px);
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.button:hover {
+  opacity: 80%;
+}
+
+.button[disabled]:hover {
+  color: grey;
+  opacity: 50%;
+  background-color: rgb(49, 48, 48);
+}
+
+@media screen and (max-width: 990px) {
+  .button {
+    font-size: 22px;
+    width: 55%;
+    height: 7vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .button {
+    width: 60%;
+    height: 10vw;
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+}

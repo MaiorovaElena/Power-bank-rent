@@ -1,7 +1,18 @@
 @import './_template.css';
+@import './_fonts.css';
 
-body{
-    background-color: var(--black-color);
+
+
+* {
     padding: 0;
     margin: 0;
+    scroll-margin-top: 130px;
+
+    @media (max-width: 440px) {
+        scroll-margin-top: 90px;
+    }
+}
+
+body {
+    background-color: var(--black-color);
 }

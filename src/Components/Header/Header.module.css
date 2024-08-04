@@ -1,5 +1,246 @@
-@import '../../style/_template.css';
+@import "../../style/_template.css";
 
-.header{
+.header {
+  color: var(--white-color);
+  border-radius: 0 0 40px 40px;
+  border-top-style: none;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.blokText {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title {
+  display: flex;
+  cursor: pointer;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: rgba(29, 13, 44, 0.575);
+}
+
+.title:hover {
+  border: 2px solid var(--violet-color);
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+.titleText {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: clamp(24px, 4vw, 48px);
+  line-height: 44%;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.menuLink {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+
+.menuList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+}
+
+.menuLi {
+  font-family: var(--font-family);
+  font-size: clamp(16px, 2vw, 22px);
+  font-weight: 300;
+  color: var(--white-color);
+  padding: 1%;
+  border-radius: 10px;
+  background-color: rgba(29, 13, 44, 0.575);
+  text-align: center;
+}
+
+.menuLi:hover {
+  border: 2px solid var(--violet-color);
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.877);
+  margin-left: 1%;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: 87%;
+  width: 10%;
+}
+
+
+
+.slash {
+  padding: 0 5% 0 5%;
+}
+
+.logo {
+  width: 15%;
+  text-align: end;
+}
+
+.logoImg {
+  width: 70%;
+}
+
+.active {
+  border-bottom: 1px solid white;
+}
+
+.mobileText {
+  display: none;
+  width: 90%;
+}
+
+.open {
+  display: none;
+}
+
+.btnOpen {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.languageBlock {
+  display: flex;
+
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(29, 13, 44, 0.575);
+  margin-left: 8%;
+}
+
+.languageBlock:hover {
+  border: 2px solid var(--violet-color);
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+.langBtn {
+  background-color: transparent;
+  border: none;
+  color: var(--white-color);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: 87%;
+  cursor: pointer;
+}
+
+
+.slash {
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 799px) {
+
+  .menu {
+    display: none;
+  }
+
+  .blokText {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .titleMob {
+    cursor: pointer;
+    padding: 6%;
+    border-radius: 10px;
+    background-color: rgba(29, 13, 44, 0.575);
+  }
+
+  .titleMob:hover {
+    border: 2px solid var(--violet-color);
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.877);
+  }
+
+  .btnOpen{
+    margin-left: 6%;
+  }
+
+  .mobileText {
+    display: block;
+    order: 2;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: rgba(29, 13, 44, 0.699);
+    margin-left: 10%;
+  }
+
+  .textPowerBank {
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+  }
+
+  .span {
     color: var(--violet-color);
+  }
+
+  .open {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .language {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .languageBlock{
+    padding: 5px;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .logoImg{
+    width: 100%;
+  }
+
 }

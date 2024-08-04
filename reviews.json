@@ -1,0 +1,76 @@
+[
+    {
+        "name": "milica",
+        "text": "easy-and",
+        "data": "20.06.24",
+        "image":"reviews/0.png"
+    },
+    {
+        "name": "Jovan",
+        "text": "i-use-this",
+        "data": "21.06.24",
+        "image":"reviews/1.png"
+    },
+    {
+        "name": "Nevera",
+        "text": "a-real",
+        "data": "03.08.24 ",
+        "image":"reviews/2.png"
+    },
+    {
+        "name": "Dragan",
+        "text": "couriers",
+        "data": "05.07.24 ",
+        "image":"reviews/3.png"
+    },
+    {
+        "name": "Edward",
+        "text": "easy-and",
+        "data": "25.06.24",
+        "image":"reviews/4.jpg"
+    },
+    {
+        "name": "Adeline",
+        "text": "couriers",
+        "data": "23.04.24",
+        "image":"reviews/5.jpg"
+    },
+    {
+        "name": "Richard",
+        "text": "a-real",
+        "data": "11.04.24",
+        "image":"reviews/6.jpg"
+    },
+    {
+        "name": "Camilla",
+        "text": "i-use-this",
+        "data": "03.06.24",
+        "image":"reviews/7.jpg"
+    },
+
+
+    {
+        "name": "milica",
+        "text": "easy-and",
+        "data": "20.06.24",
+        "image":"reviews/8.jpg"
+    },
+    {
+        "name": "Jovan",
+        "text": "i-use-this",
+        "data": "21.06.24",
+        "image":"reviews/9.jpg"
+    },
+    {
+        "name": "Nevera",
+        "text": "a-real",
+        "data": "03.08.24 ",
+        "image":"reviews/10.jpg"
+    },
+    {
+        "name": "Dragan",
+        "text": "couriers",
+        "data": "05.07.24 ",
+        "image":"reviews/11.jpg"
+    }
+]

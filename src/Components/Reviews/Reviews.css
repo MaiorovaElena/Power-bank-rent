@@ -1,0 +1,65 @@
+@import '../../style/_template.css';
+
+.review-container {
+    background-image: url(../../assets/reviews/backg.svg);
+    background-position: center;
+    height: 78vh;
+    margin-top: 10%;
+    background-size: auto 78vh;
+
+    @media (max-width: 950px){
+        height: 100vh;
+        background-size: auto 100vh;
+    }
+
+    @media (max-width: 400px) {
+        margin-top: 20%;
+    }
+}
+
+
+.swiper {
+    width: clamp(360px, 95vw,1440px);
+    height: 90vmin;
+
+
+    @media (max-width: 950px) {
+        height: 130vh;
+    }
+
+
+    @media (max-width: 400px){
+        height: 100vh;
+    }
+
+    @media (max-width: 375px) {
+        height: 100vmax;
+    }
+}
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+    color: var( --white-color) !important;
+}
+
+.group-container-reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    @media (max-width: 950px) {
+        grid-template-columns: 1fr;
+        gap: 2%;
+        justify-content: center;
+        height: 90%;
+    }
+}

@@ -1,0 +1,60 @@
+.container {
+  background-color: var(--violet-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  height: clamp(80px, 1.5vw, 100px);
+  width: clamp(300px, 9vw, 380px);
+  margin-bottom: 25px;
+  margin-top: 30px;
+  padding: 7px;
+}
+
+.title {
+  color: var(--black-color);
+  font-size: clamp(36px, 7vw, 48px);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1160px) {
+  .container {
+    height: 17%;
+    width: 35%;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: clamp(20px, 5vw, 36px);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    height: 2%;
+    width: 60%;
+    border-radius: 30px;
+    margin-top: 5vw;
+    margin-bottom: 7vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    height: 12vw;
+    width: 59%;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .title {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,95 @@
+@import '../../../style/_template.css';
+
+
+.burgerMenu {
+    display: none;
+}
+
+
+.menuLink {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 799px) {
+
+    .burgerMenu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: aliceblue;
+        width: 0;
+        height: 40svh;
+        margin-left: auto;
+        border-bottom-right-radius: 36px;
+        border-bottom-left-radius: 36px;
+        top: 0;
+        left: 0;
+        background-color: var(--black-color);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .openMenu {
+        width: 100%;
+        border-bottom: 5px solid var(--violet-color);
+        border-right: 5px solid var(--violet-color);
+    }
+
+    .x {
+        color: black;
+        margin-left: 70%;
+        display: block;
+        transition: 0.3s;
+        height: 5%;
+    }
+
+    .btnClose {
+        width: 60%;
+    }
+
+    .xBtn {
+        display: block;
+        transition: 0.3s;
+        background-color: transparent;
+        border: none;
+
+    }
+
+    .menu {
+        height: 50%;
+    }
+
+    .menuList {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        text-transform: uppercase;
+    }
+
+    .menuLink {
+        background-color: transparent;
+        border: none;
+        text-transform: uppercase;
+        color: var(--white-color);
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+
+    .titleMobileText {
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-align: center;
+    }
+}

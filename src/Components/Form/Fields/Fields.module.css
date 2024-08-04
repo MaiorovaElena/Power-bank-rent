@@ -1,0 +1,141 @@
+.input {
+  color: var(--white-color);
+  font-size: clamp(23px, 2vw, 32px);
+  font-weight: 500;
+  background-color: var(--black-color);
+  box-sizing: border-box;
+  border: 2px solid var(--violet-color);
+  border-radius: 20px;
+  height: clamp(50px, 12vw, 75px);
+  width: clamp(200px, 60vw, 820px);
+  padding-left: 25px;
+  margin-bottom: 18px;
+}
+
+.input:focus {
+  border: 2.5px solid var(--light-color);
+}
+
+::placeholder {
+  font-size: clamp(20px, 2vw, 24px);
+  font-weight: 200;
+  color: var(--white-color);
+}
+
+.checkboxContainer {
+  color: var(--white-color);
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 200;
+  user-select: none;
+  margin: 30px;
+  width: clamp(290px, 58vw, 820px);
+}
+
+.checkbox {
+  margin-right: 7px;
+}
+
+input[type="checkbox"] + label {
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: clamp(18px, 2vw, 24px);
+  text-decoration: underline;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  border: none;
+  text-align: left;
+}
+
+.span {
+  color: var(--violet-color);
+}
+
+.error {
+  color: rgb(249, 69, 69);
+  padding-bottom: 11px;
+  margin-bottom: 5px;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-family);
+  font-size: clamp(20px, 3vw, 30px);
+  background-color: var(--violet-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  width: 50%;
+  height: 40%;
+  padding: 20px;
+  margin-bottom: 35px;
+}
+
+@media screen and (max-width: 990px) {
+  .input {
+    width: 65vw;
+    height: 8vw;
+  }
+
+  .modal {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .input {
+    font-size: 15px;
+    width: 66vw;
+    height: 11vw;
+  }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+
+  .checkboxContainer {
+    text-align: center;
+    width: 70vw;
+    margin-top: 0px;
+    margin-bottom: 60px;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+
+  .terms {
+    font-size: 12px;
+  }
+
+  .error {
+    font-size: 12px;
+  }
+
+  .modal {
+    font-size: 18px;
+    width: 60%;
+    height: 50%;
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .input {
+    font-size: 12px;
+    height: 8vw;
+  }
+
+  .checkboxContainer {
+    font-size: 8px;
+  }
+}

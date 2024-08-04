@@ -1,0 +1,28 @@
+.text {
+  color: var(--white-color);
+  font-family: var(--font-family);
+  font-size: 48px;
+  font-weight: 800;
+  text-align: left;
+  padding-right: clamp(100px, 5vw, 170px);
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .text {
+    font-size: clamp(27px, 4vw, 36px);
+    padding-right: 170px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .text {
+    padding-right: 15%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .text {
+    display: none;
+  }
+}

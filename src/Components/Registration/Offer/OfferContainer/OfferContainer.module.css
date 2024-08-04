@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 33px;
+}
+
+.details {
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+  gap: 20px;
+}
+
+.image {
+  display: none;
+}
+
+.text {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    flex-wrap: wrap;
+    width: 99%;
+  }
+
+  .buttons {
+    margin-right: 6%;
+  }
+}
+
+.device {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    align-items: center;
+  }
+
+  .buttons {
+    margin-right: 0px;
+    margin: 0 auto;
+  }
+
+  .device {
+    display: flex;
+    align-items: center;
+  }
+
+  .deviceTitle {
+    width: 95%;
+  }
+
+  .titleLight {
+    color: var(--white-color);
+    text-align: start;
+    font-weight: 500;
+    font-family: var(--font-family);
+    font-size: 32px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+  }
+
+  .titleViolet {
+    color: var(--violet-color);
+    text-align: end;
+    font-weight: 500;
+    font-family: var(--font-family);
+    font-size: 32px;
+    padding-left: 40px;
+  }
+
+  .image {
+    display: flex;
+    object-fit: contain;
+    margin-top: 20px;
+    height: 45%;
+    width: auto;
+  }
+
+  .text {
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--white-color);
+    display: inline;
+    margin: 35px;
+    margin-bottom: 10px;
+  }
+}
